@@ -7,7 +7,7 @@
     <link rel="icon" href="./assets/images/icons/logo.svg" type="image/svg">
     <link rel="stylesheet" href="./assets/fonts/fonts.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Имущество</title>
+    <title>Сотрудники</title>
 </head>
 
 <body>
@@ -21,9 +21,6 @@
                         <img class="header__block-logo__icon" src="./assets/images/icons/logo.svg" alt="Логотип">
                         <p class="header__block-logo__text">v 2.01</p>
                     </div>
-                    <h2>
-                        <a href="#">Имущество</a> / <a href="#">Создать имущество</a>
-                    </h2>
                 </div>
                 <div class="header__block-exit dFlex">
                     <p class="header__block-user">Юшин Дмитрий</p>
@@ -42,8 +39,8 @@
         <aside class="aside">
             <nav class="content__block-menu">
                 <ul class="content__block-menu__lists">
-                    <li class="content__block-menu__list active">
-                        <a class="content__block-menu__link active dFlex aic" href="#">
+                    <li class="content__block-menu__list">
+                        <a class="content__block-menu__link dFlex aic" href="#">
                             <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -64,8 +61,8 @@
                             <span>Инвентаризация</span>
                         </a>
                     </li>
-                    <li class="content__block-menu__list">
-                        <a class="content__block-menu__link dFlex aic" href="#">
+                    <li class="content__block-menu__list active">
+                        <a class="content__block-menu__link active dFlex aic" href="#">
                             <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -121,12 +118,13 @@
                 </button>
             </nav>
             <div class="content__block-scrollbar">
-                <h3>Категории имущества</h3>
+                <h3>Структура отделов</h3>
                 <div class="content__block-scrollbar__container dFlex fdc">
+                    <p class="inventory-all__employees-text">Без отдела</p>
                     <div class="content__block-scrollbar__container-box">
                         <p class="content__block-scrollbar__container-box__text dFlex aic" data-select="select1">
                             <span class="content__block-scrollbar__container-box__round"></span>
-                            <span>Кассовые аппараты</span>
+                            <span>Отдел 1</span>
                         </p>
                         <div class="content__block-scrollbar__container-box__border" id="select1">
                             <ul class="content__block-scrollbar__container-box__lists">
@@ -157,7 +155,7 @@
                     <div class="content__block-scrollbar__container-box">
                         <p class="content__block-scrollbar__container-box__text dFlex aic" data-select="select2">
                             <span class="content__block-scrollbar__container-box__round"></span>
-                            <span>Кассовые аппараты</span>
+                            <span>Отдел 2</span>
                         </p>
                         <div class="content__block-scrollbar__container-box__border" id="select2">
                             <ul class="content__block-scrollbar__container-box__lists">
@@ -283,13 +281,6 @@
             <div class="container__block">
                 <div class="main__container dFlex fdc jcsb">
                     <div>
-                        <div class="dFlex">
-                            <div class="dFlex main__container-box__title aic" id="blockTitleMain">
-                                <h2 id="titleMain">
-                                    <a href="#">Имущество</a> / <a href="#">Создать имущество</a>
-                                </h2>
-                            </div>
-                        </div>
                         <div class="main__container-block main__create-block dFlex fdc">
                             <div class="dFlex aic main__create-block__title">
                                 <a href="#" class="main__create-block__link">
@@ -302,98 +293,27 @@
                                             stroke-linejoin="round" />
                                     </svg></a>
                                 <h2>
-                                    Основные параметры
+                                    %ФИО сотрудника%
                                 </h2>
                             </div>
                             <div class="main__create-block__inputs dGrid">
                                 <div class="main__box-input dFlex fdc">
-                                    <label class="main__label dFlex aic" for="createInput0">Название
-                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="11" cy="11" r="10" stroke="#FF6600" stroke-width="1.5" />
-                                            <path
-                                                d="M9 8C9 6.89543 9.89543 6 11 6C12.1046 6 13 6.89543 13 8C13 8.39815 12.8837 8.76913 12.6831 9.08079C12.0854 10.0097 11 10.8954 11 12V12.5"
-                                                stroke="#FF6600" stroke-width="1.5" stroke-linecap="round" />
-                                            <path d="M10.991 16H11" stroke="#FF6600" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </label>
+                                    <label class="main__label dFlex aic" for="createInput0">Фамилия</label>
                                     <input class="main__input" type="text" id="createInput0" name="createInput"
-                                        value="Имущество длинное название которое сокращается">
+                                        value="Юшин">
                                 </div>
                                 <div class="main__box-input dFlex fdc">
-                                    <p class="main__label dFlex aic">Материально-ответственное лицо (МОЛ)
-                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="11" cy="11" r="10" stroke="#FF6600" stroke-width="1.5" />
-                                            <path
-                                                d="M9 8C9 6.89543 9.89543 6 11 6C12.1046 6 13 6.89543 13 8C13 8.39815 12.8837 8.76913 12.6831 9.08079C12.0854 10.0097 11 10.8954 11 12V12.5"
-                                                stroke="#FF6600" stroke-width="1.5" stroke-linecap="round" />
-                                            <path d="M10.991 16H11" stroke="#FF6600" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </p>
-                                    <div class="select__property" data-state="">
-                                        <div class="select__property-title dFlex aic"></div>
-                                        <div class="select__property-content">
-                                            <input id="selectCreate6" class="select__property-input" type="radio"
-                                                name="selectmol" checked />
-                                            <label for="selectCreate6" tabindex="0" class="select__property-label"
-                                                data-value="Юшин Дмитрий Александрович"></label>
-                                            <input id="selectCreate7" class="select__property-input" type="radio"
-                                                name="selectmol" />
-                                            <label for="selectCreate7" tabindex="0" class="select__property-label"
-                                                data-value="Юшин Дмитрий Александрович"></label>
-                                            <input id="selectCreate8" class="select__property-input" type="radio"
-                                                name="selectmol" />
-                                            <label for="selectCreate8" tabindex="0" class="select__property-label"
-                                                data-value="Юшин Дмитрий Александрович"></label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="main__box-input dFlex fdc">
-                                    <p class="main__label dFlex aic">Локация
-                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="11" cy="11" r="10" stroke="#FF6600" stroke-width="1.5" />
-                                            <path
-                                                d="M9 8C9 6.89543 9.89543 6 11 6C12.1046 6 13 6.89543 13 8C13 8.39815 12.8837 8.76913 12.6831 9.08079C12.0854 10.0097 11 10.8954 11 12V12.5"
-                                                stroke="#FF6600" stroke-width="1.5" stroke-linecap="round" />
-                                            <path d="M10.991 16H11" stroke="#FF6600" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </p>
-                                    <div class="select__property" data-state="">
-                                        <div class="select__property-title dFlex aic"></div>
-                                        <div class="select__property-content">
-                                            <input id="selectCreate0" class="select__property-input" type="radio"
-                                                name="location" checked />
-                                            <label for="selectCreate0" tabindex="0" class="select__property-label"
-                                                data-value="Склад Достаевская 112"></label>
-                                            <input id="selectCreate1" class="select__property-input" type="radio"
-                                                name="location" />
-                                            <label for="selectCreate1" tabindex="0" class="select__property-label"
-                                                data-value="Склад Достаевская 113"></label>
-                                            <input id="selectCreate2" class="select__property-input" type="radio"
-                                                name="location" />
-                                            <label for="selectCreate2" tabindex="0" class="select__property-label"
-                                                data-value="Склад Достаевская 114"></label>
-                                        </div>
-                                    </div>
+                                    <label class="main__label dFlex aic" for="employeesName">Имя</label>
+                                    <input class="main__input" type="text" id="employeesName" name="employeesName"
+                                        value="Дмитрий">
                                 </div>
                                 <div class="main__box-input dFlex fdc">
-                                    <p class="main__label dFlex aic">Раздел имущества
-                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="11" cy="11" r="10" stroke="#FF6600" stroke-width="1.5" />
-                                            <path
-                                                d="M9 8C9 6.89543 9.89543 6 11 6C12.1046 6 13 6.89543 13 8C13 8.39815 12.8837 8.76913 12.6831 9.08079C12.0854 10.0097 11 10.8954 11 12V12.5"
-                                                stroke="#FF6600" stroke-width="1.5" stroke-linecap="round" />
-                                            <path d="M10.991 16H11" stroke="#FF6600" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </p>
+                                    <label class="main__label dFlex aic" for="employeesName0">Отчество</label>
+                                    <input class="main__input" type="text" id="employeesName0" name="employeesName0"
+                                        value="Александрович">
+                                </div>
+                                <div class="main__box-input dFlex fdc" id="groupField">
+                                    <p class="main__label dFlex aic">Отдел</p>
                                     <div class="select__property" data-state="">
                                         <div class="select__property-title dFlex aic"></div>
                                         <div class="select__property-content">
@@ -413,156 +333,62 @@
                                     </div>
                                 </div>
                                 <div class="main__box-input dFlex fdc">
-                                    <p class="main__label dFlex aic">Штрихкод
-                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="11" cy="11" r="10" stroke="#FF6600" stroke-width="1.5" />
-                                            <path
-                                                d="M9 8C9 6.89543 9.89543 6 11 6C12.1046 6 13 6.89543 13 8C13 8.39815 12.8837 8.76913 12.6831 9.08079C12.0854 10.0097 11 10.8954 11 12V12.5"
-                                                stroke="#FF6600" stroke-width="1.5" stroke-linecap="round" />
-                                            <path d="M10.991 16H11" stroke="#FF6600" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </p>
+                                    <p class="main__label dFlex aic">Роль</p>
                                     <div class="select__property" data-state="">
                                         <div class="select__property-title dFlex aic"></div>
                                         <div class="select__property-content">
                                             <input id="selectCreate3" class="select__property-input" type="radio"
                                                 name="selectCreate" checked />
                                             <label for="selectCreate3" tabindex="0" class="select__property-label"
-                                                data-value="222222222222"></label>
+                                                data-value="Администратор"></label>
                                             <input id="selectCreate4" class="select__property-input" type="radio"
                                                 name="selectCreate" />
                                             <label for="selectCreate4" tabindex="0" class="select__property-label"
-                                                data-value="111111111111"></label>
+                                                data-value="Администратор"></label>
                                             <input id="selectCreate5" class="select__property-input" type="radio"
                                                 name="selectCreate" />
                                             <label for="selectCreate5" tabindex="0" class="select__property-label"
-                                                data-value="323423432423"></label>
+                                                data-value="Администратор"></label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="main__box-input dFlex fdc">
-                                    <label class="main__label dFlex aic" for="createInput1">Колличество
-                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="11" cy="11" r="10" stroke="#FF6600" stroke-width="1.5" />
-                                            <path
-                                                d="M9 8C9 6.89543 9.89543 6 11 6C12.1046 6 13 6.89543 13 8C13 8.39815 12.8837 8.76913 12.6831 9.08079C12.0854 10.0097 11 10.8954 11 12V12.5"
-                                                stroke="#FF6600" stroke-width="1.5" stroke-linecap="round" />
-                                            <path d="M10.991 16H11" stroke="#FF6600" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </label>
-                                    <input class="main__input" type="number" id="createInput1" name="count" value="30">
-                                </div>
-                            </div>
-                            <div>
-                                <p class="main__label main__block-photo">Фотографии имущества</p>
-                                <div class="dGrid main__container-photo">
-                                    <div class="main__container-photo__image-block">
-                                        <img class="main__container-photo__image" src="./assets/images/photo.png"
-                                            alt="Фото">
-                                        <button class="main__container-photo__btn dFlex aic jcc" type="button">
-                                            <img src="./assets/images/icons/plus.svg" alt="Удалить">
-                                        </button>
-                                    </div>
-                                    <div class="main__container-photo__image-block">
-                                        <img class="main__container-photo__image" src="./assets/images/photo.png"
-                                            alt="Фото">
-                                        <button class="main__container-photo__btn dFlex aic jcc" type="button">
-                                            <img src="./assets/images/icons/plus.svg" alt="Удалить">
-                                        </button>
-                                    </div>
-                                    <div class="main__container-photo__image-block">
-                                        <img class="main__container-photo__image" src="./assets/images/photo.png"
-                                            alt="Фото">
-                                        <button class="main__container-photo__btn dFlex aic jcc" type="button">
-                                            <img src="./assets/images/icons/plus.svg" alt="Удалить">
-                                        </button>
-                                    </div>
-                                    <div class="main__container-photo__image-block">
-                                        <img class="main__container-photo__image" src="./assets/images/photo.png"
-                                            alt="Фото">
-                                        <button class="main__container-photo__btn dFlex aic jcc" type="button">
-                                            <img src="./assets/images/icons/plus.svg" alt="Удалить">
-                                        </button>
-                                    </div>
-                                    <div class="main__container-photo__image-block">
-                                        <img class="main__container-photo__image" src="./assets/images/photo.png"
-                                            alt="Фото">
-                                        <button class="main__container-photo__btn dFlex aic jcc" type="button">
-                                            <img src="./assets/images/icons/plus.svg" alt="Удалить">
-                                        </button>
-                                    </div>
-                                    <div class="main__container-photo__image-block">
-                                        <img class="main__container-photo__image" src="./assets/images/photo.png"
-                                            alt="Фото">
-                                        <button class="main__container-photo__btn dFlex aic jcc" type="button">
-                                            <img src="./assets/images/icons/plus.svg" alt="Удалить">
-                                        </button>
-                                    </div>
-                                    <div class="main__container-photo__image-block">
-                                        <img class="main__container-photo__image" src="./assets/images/photo.png"
-                                            alt="Фото">
-                                        <button class="main__container-photo__btn dFlex aic jcc" type="button">
-                                            <img src="./assets/images/icons/plus.svg" alt="Удалить">
-                                        </button>
+                                    <p class="main__label dFlex aic">Статус</p>
+                                    <div class="select__property" data-state="">
+                                        <div class="select__property-title dFlex aic"></div>
+                                        <div class="select__property-content">
+                                            <input id="selectStatus0" class="select__property-input" type="radio"
+                                                name="selectStatus" checked />
+                                            <label for="selectStatus0" tabindex="0" class="select__property-label"
+                                                data-value="Заблокирован"></label>
+                                            <input id="selectStatus1" class="select__property-input" type="radio"
+                                                name="selectStatus" />
+                                            <label for="selectStatus1" tabindex="0" class="select__property-label"
+                                                data-value="Заблокирован"></label>
+                                            <input id="selectStatus2" class="select__property-input" type="radio"
+                                                name="selectStatus" />
+                                            <label for="selectStatus2" tabindex="0" class="select__property-label"
+                                                data-value="Заблокирован"></label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn__create btn__create-add__photo dFlex aic jcc">
-                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 0.5H8V13.5H5V0.5Z" fill="white"></path>
-                                    <path d="M13 5.5V8.5H0L1.31134e-07 5.5L13 5.5Z" fill="white"></path>
-                                </svg>
-                                добавить фото
-                            </button>
                             <div class="dFlex fdc">
                                 <label for="textareaDescription"
-                                    class="main__label main__block-description dFlex aic">Описание<svg width="22"
-                                        height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="11" cy="11" r="10" stroke="#FF6600" stroke-width="1.5" />
-                                        <path
-                                            d="M9 8C9 6.89543 9.89543 6 11 6C12.1046 6 13 6.89543 13 8C13 8.39815 12.8837 8.76913 12.6831 9.08079C12.0854 10.0097 11 10.8954 11 12V12.5"
-                                            stroke="#FF6600" stroke-width="1.5" stroke-linecap="round" />
-                                        <path d="M10.991 16H11" stroke="#FF6600" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg></label>
+                                    class="main__label main__block-description dFlex aic">Описание</label>
                                 <textarea class="main__block-description__textarea main__input"
                                     name="textareaDescription"
                                     id="textareaDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias obcaecati enim, recusandae dicta nobis debitis, hic repellendus doloremque ipsa amet tenetur quod! Temporibus numquam et unde quaerat expedita cum ab!</textarea>
                             </div>
                             <div>
-                                <h2>Характеристики</h2>
+                                <h2>Дополнительные поля</h2>
                                 <div class="dGrid main__block-charackteristicks">
                                     <div class="main__box-input dFlex fdc">
-                                        <label class="main__label dFlex aic" for="price">Цена
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="11" cy="11" r="10" stroke="#FF6600" stroke-width="1.5" />
-                                                <path
-                                                    d="M9 8C9 6.89543 9.89543 6 11 6C12.1046 6 13 6.89543 13 8C13 8.39815 12.8837 8.76913 12.6831 9.08079C12.0854 10.0097 11 10.8954 11 12V12.5"
-                                                    stroke="#FF6600" stroke-width="1.5" stroke-linecap="round" />
-                                                <path d="M10.991 16H11" stroke="#FF6600" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </label>
-                                        <input class="main__input" type="number" id="price" name="price" value="30">
+                                        <label class="main__label dFlex aic" for="sex">Пол</label>
+                                        <input class="main__input" type="text" id="sex" name="sex" value="Муж">
                                     </div>
                                     <div class="main__box-input dFlex fdc">
-                                        <p class="main__label dFlex aic">Раздел имущества
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="11" cy="11" r="10" stroke="#FF6600" stroke-width="1.5" />
-                                                <path
-                                                    d="M9 8C9 6.89543 9.89543 6 11 6C12.1046 6 13 6.89543 13 8C13 8.39815 12.8837 8.76913 12.6831 9.08079C12.0854 10.0097 11 10.8954 11 12V12.5"
-                                                    stroke="#FF6600" stroke-width="1.5" stroke-linecap="round" />
-                                                <path d="M10.991 16H11" stroke="#FF6600" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </p>
+                                        <p class="main__label dFlex aic">Вес</p>
                                         <div class="select__property" data-state="">
                                             <div class="select__property-title dFlex aic"></div>
                                             <div class="select__property-content">
@@ -580,6 +406,220 @@
                                                     data-value="2 614 г"></label>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="employees-edit__info employees-edit__movement">
+                        <h2>Информация</h2>
+                        <div
+                            class="dFlex main__container-block__btns-box__view main__settings-btns main__settings-btns__inventory">
+                            <button type="button" class="btn btn__tab">Имущество</button>
+                            <button type="button" class="btn btn__tab">Задачи
+                                <span class="employees-edit__info-round dFlex aic jcc">2</span>
+                            </button>
+                            <button type="button" class="btn btn__tab active">Движение имущества</button>
+                        </div>
+                        <div class="main__container-block__table">
+                            <div class="main__container-block__table-filter">
+                                <div class="main__container-block__table-row dFlex aic">
+                                    <p
+                                        class="main__container-block__table-col main__container-block__table-col__filter">
+                                        Дата обмена
+                                    </p>
+                                    <p
+                                        class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
+                                        Время
+                                    </p>
+                                    <p
+                                        class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
+                                        Событие
+                                    </p>
+                                    <p
+                                        class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
+                                        Имущество
+                                    </p>
+                                    <p
+                                        class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
+                                        Было
+                                    </p>
+                                    <p
+                                        class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
+                                        Стало
+                                    </p>
+                                    <p
+                                        class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
+                                        Кто сделал
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="main__container-block__table-body">
+                                <div class="main__container-block__table-row dFlex aic">
+                                    <div class="main__container-block__table-col">
+                                        <time datetime="20-09-2021">20.09.2021</time>
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <time datetime="18:36:21">18:36:21</time>
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <p>Смена локации</p>
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <p>Имущество12</p>
+                                    </div>
+                                    <div class="main__container-block__table-col dFlex aic jcsb">
+                                        <p>Кабинет 402</p>
+                                        <img src="./assets/images/icons/arrow-rigth.svg" alt="">
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <p>Кабинет 401</p>
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <p>Юшин Дмитрий Александрович</p>
+                                    </div>
+                                </div>
+                                <div class="main__container-block__table-row dFlex aic">
+                                    <div class="main__container-block__table-col">
+                                        <time datetime="20-09-2021">20.09.2021</time>
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <time datetime="18:36:21">18:36:21</time>
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <p>Смена локации</p>
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <p>Имущество12</p>
+                                    </div>
+                                    <div class="main__container-block__table-col dFlex aic jcsb">
+                                        <p>Кабинет 402</p>
+                                        <img src="./assets/images/icons/arrow-rigth.svg" alt="">
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <p>Кабинет 401</p>
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <p>Юшин Дмитрий Александрович</p>
+                                    </div>
+                                </div>
+                                <div class="main__container-block__table-row dFlex aic">
+                                    <div class="main__container-block__table-col">
+                                        <time datetime="20-09-2021">20.09.2021</time>
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <time datetime="18:36:21">18:36:21</time>
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <p>Смена локации</p>
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <p>Имущество12</p>
+                                    </div>
+                                    <div class="main__container-block__table-col dFlex aic jcsb">
+                                        <p>Кабинет 402</p>
+                                        <img src="./assets/images/icons/arrow-rigth.svg" alt="">
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <p>Кабинет 401</p>
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <p>Юшин Дмитрий Александрович</p>
+                                    </div>
+                                </div>
+                                <div class="main__container-block__table-row dFlex aic">
+                                    <div class="main__container-block__table-col">
+                                        <time datetime="20-09-2021">20.09.2021</time>
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <time datetime="18:36:21">18:36:21</time>
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <p>Смена локации</p>
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <p>Имущество12</p>
+                                    </div>
+                                    <div class="main__container-block__table-col dFlex aic jcsb">
+                                        <p>Кабинет 402</p>
+                                        <img src="./assets/images/icons/arrow-rigth.svg" alt="">
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <p>Кабинет 401</p>
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <p>Юшин Дмитрий Александрович</p>
+                                    </div>
+                                </div>
+                                <div class="main__container-block__table-row dFlex aic">
+                                    <div class="main__container-block__table-col">
+                                        <time datetime="20-09-2021">20.09.2021</time>
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <time datetime="18:36:21">18:36:21</time>
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <p>Смена локации</p>
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <p>Имущество12</p>
+                                    </div>
+                                    <div class="main__container-block__table-col dFlex aic jcsb">
+                                        <p>Кабинет 402</p>
+                                        <img src="./assets/images/icons/arrow-rigth.svg" alt="">
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <p>Кабинет 401</p>
+                                    </div>
+                                    <div class="main__container-block__table-col">
+                                        <p>Юшин Дмитрий Александрович</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dFlex aic">
+                            <div
+                                class="main__container-block__paginations main__container-block__paginations-archive dFlex aic">
+                                <p class="main__container-block__pagination active">1</p>
+                                <p class="main__container-block__pagination">2</p>
+                                <p class="main__container-block__pagination">3</p>
+                                <p class="main__container-block__pagination">4</p>
+                                <p class="main__container-block__pagination">5</p>
+                                <p class="main__container-block__pagination">6</p>
+                                <p class="main__container-block__pagination">...</p>
+                                <p class="main__container-block__pagination">23</p>
+                            </div>
+                            <div class="main__container-block__actions dFlex">
+                                <button type="button" class="dFlex aic download__table">
+                                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.5 0C8.03054 0 7.65004 0.373038 7.65004 0.83329V8.81869L5.7058 6.91271C5.37396 6.58723 4.83577 6.58723 4.5038 6.91271C4.17181 7.23819 4.17181 7.76582 4.5038 8.09115L7.85867 11.3804C8.01449 11.5559 8.24416 11.6668 8.5 11.6668C8.73294 11.6668 8.9441 11.5749 9.09751 11.4261C9.11472 11.4118 9.13137 11.3967 9.1476 11.3808L12.5029 8.09117C12.8349 7.76583 12.8349 7.2382 12.5029 6.91274C12.1709 6.58726 11.6328 6.58726 11.3007 6.91274L9.35007 8.82528V0.833458C9.35007 0.373205 8.96942 0.000167847 8.49996 0.000167847L8.5 0Z"
+                                            fill="#FF6600"></path>
+                                        <path
+                                            d="M0.849956 13.3333C0.380499 13.3333 0 13.7065 0 14.1667C0 14.627 0.380499 15 0.849956 15H16.15C16.6195 15 17 14.627 17 14.1667C17 13.7065 16.6195 13.3333 16.15 13.3333H0.849956Z"
+                                            fill="#FF6600"></path>
+                                    </svg>
+                                    <p>Скачать</p>
+                                </button>
+                                <div class="main__container-block__actions-selects dFlex">
+                                    <p>Выводить объектов на странице:</p>
+                                    <div class="main__container-block__actions-select" data-state="">
+                                        <div class="main__container-block__actions-select__title" style=""></div>
+                                        <div class="main__container-block__actions-select__content">
+                                            <input id="singleSelectArchive0" type="radio" name="singleSelectArchive"
+                                                checked="">
+                                            <label class="main__container-block__actions-select__content-label"
+                                                for="singleSelectArchive0" tabindex="0" data-value="20"></label>
+                                            <input id="singleSelectArchive1" type="radio" name="singleSelectArchive">
+                                            <label class="main__container-block__actions-select__content-label"
+                                                for="singleSelectArchive1" tabindex="0" data-value="30"></label>
+                                            <input id="singleSelectArchive2" type="radio" name="singleSelectArchive">
+                                            <label class="main__container-block__actions-select__content-label"
+                                                for="singleSelectArchive2" tabindex="0" data-value="40"></label>
+                                        </div>
+                                        <img class="main__container-block__actions-editing__arrow"
+                                            src="./assets/images/icons/arrow-icon.svg" alt="Стрелка">
                                     </div>
                                 </div>
                             </div>
@@ -604,6 +644,13 @@
                                 </svg>
                                 создать</button>
                             <button type="button" class="btn__footer">отменить</button>
+                            <button type="button" class="btn__footer btn__footer-icon dFlex aic jcc">
+                                <svg class="delete-icon" width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 0.5H8V13.5H5V0.5Z" fill="#FF4545"></path>
+                                    <path d="M13 5.5V8.5H0L1.31134e-07 5.5L13 5.5Z" fill="#FF4545"></path>
+                                </svg>
+                                удалить</button>
                         </div>
                         <a class="dFlex aic footer__texts-doc" href="#">
                             <svg width="17" height="19" viewBox="0 0 17 19" fill="none"

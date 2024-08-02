@@ -133,110 +133,15 @@
                             </div>
                         </div>
                         <div class="main__container-block dFlex fdc">
-                            <div class="dFlex main__container-block__btns-box__view main__settings-btns">
-                                <button type="button" class="btn btn__tab active">Имущество</button>
-                                <button type="button" class="btn btn__tab">Инвентаризация</button>
+                            <div
+                                class="dFlex main__container-block__btns-box__view main__settings-btns main__settings-btns__inventory">
+                                <button type="button" class="btn btn__tab">Имущество</button>
+                                <button type="button" class="btn btn__tab active">Инвентаризация</button>
                                 <button type="button" class="btn btn__tab">Сотрудники</button>
                                 <button type="button" class="btn btn__tab">Локации</button>
                                 <button type="button" class="btn btn__tab">Уведомления</button>
                                 <button type="button" class="btn btn__tab">Справочники</button>
                             </div>
-
-                            <div class="main__settings-block__toggles dFlex jcsb">
-                                <div class="main__settings-block__toggles-box dFlex fdc">
-                                    <div class="main__settings-block__toggle dFlex jcsb">
-                                        <div class="dFlex aic main__settings-block__toggle-text">
-                                            <img src="./assets/images/icons/help.svg" alt="Помощь">
-                                            <p>Возможность вводить количество >1</p>
-                                        </div>
-                                        <div class="toggle__item">
-                                            <label class="toggle__wrap" for="settingToggle0">
-                                                <input type="checkbox" name="settingToggle" class="toggle__input"
-                                                    checked="" id="settingToggle0" wfd-id="id18">
-                                                <span class="toggle__mark"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="main__settings-block__toggle dFlex jcsb">
-                                        <div class="dFlex aic main__settings-block__toggle-text">
-                                            <img src="./assets/images/icons/help.svg" alt="Помощь">
-                                            <p>Возможность создавать новое имущество только администратору</p>
-                                        </div>
-                                        <div class="toggle__item">
-                                            <label class="toggle__wrap" for="settingToggl1">
-                                                <input type="checkbox" name="settingToggle" class="toggle__input"
-                                                    checked="" id="settingToggle1" wfd-id="id18">
-                                                <span class="toggle__mark"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="main__settings-block__toggle dFlex jcsb">
-                                        <div class="dFlex aic main__settings-block__toggle-text">
-                                            <img src="./assets/images/icons/help.svg" alt="Помощь">
-                                            <p>Использовать разделы</p>
-                                        </div>
-                                        <div class="toggle__item">
-                                            <label class="toggle__wrap" for="settingToggle2">
-                                                <input type="checkbox" name="settingToggle" class="toggle__input"
-                                                    checked="" id="settingToggle2" wfd-id="id18">
-                                                <span class="toggle__mark"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="main__settings-block__toggle dFlex jcsb">
-                                        <div class="dFlex aic main__settings-block__toggle-text">
-                                            <img src="./assets/images/icons/help.svg" alt="Помощь">
-                                            <p>Сколько дней хранить логи обмена имуществом</p>
-                                        </div>
-                                        <label for="settingsInput0" class="main__settings-block__toggle-label">
-                                            <input class="main__settings-block__toggle-input" type="number"
-                                                id="settingsInput0" value="30" required>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="main__settings-block__toggles-box dFlex fdc">
-                                    <div class="main__settings-block__toggle dFlex jcsb">
-                                        <div class="dFlex aic main__settings-block__toggle-text">
-                                            <img src="./assets/images/icons/help.svg" alt="Помощь">
-                                            <p>Вести контроль заполнения штрих-кода</p>
-                                        </div>
-                                        <div class="toggle__item">
-                                            <label class="toggle__wrap" for="settingToggle3">
-                                                <input type="checkbox" name="settingToggle" class="toggle__input"
-                                                    checked="" id="settingToggle3" wfd-id="id18">
-                                                <span class="toggle__mark"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="main__settings-block__toggle dFlex jcsb">
-                                        <div class="dFlex aic main__settings-block__toggle-text">
-                                            <img src="./assets/images/icons/help.svg" alt="Помощь">
-                                            <p>Вести контроль брака</p>
-                                        </div>
-                                        <div class="toggle__item">
-                                            <label class="toggle__wrap" for="settingToggl4">
-                                                <input type="checkbox" name="settingToggle" class="toggle__input"
-                                                    checked="" id="settingToggle4" wfd-id="id18">
-                                                <span class="toggle__mark"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="main__settings-block__toggle dFlex jcsb">
-                                        <div class="dFlex aic main__settings-block__toggle-text">
-                                            <img src="./assets/images/icons/help.svg" alt="Помощь">
-                                            <p>Вести контроль дефектов</p>
-                                        </div>
-                                        <div class="toggle__item">
-                                            <label class="toggle__wrap" for="settingToggle5">
-                                                <input type="checkbox" name="settingToggle" class="toggle__input"
-                                                    checked="" id="settingToggle5" wfd-id="id18">
-                                                <span class="toggle__mark"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="main__edit-negative__statuses-last__movement main__settings-table">
                                 <div class="dFlex aic jcsb main__edit-negative__statuses-last__movement-title">
                                     <h2>Настройка полей таблицы</h2>
@@ -794,7 +699,7 @@
                 </div>
             </div>
         </footer>
-        <div class="popup popup__create" id="popupCreate">
+        <div class="popup popup__create popup__create-add" id="popupCreate">
             <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="popup__container dFlex fdc">
                 <h3>Создать поле</h3>
                 <div class="popup__block-input">
@@ -860,6 +765,11 @@
                         <label for="createNeDdirectory2" tabindex="0" class="select__property-label"
                             data-value="Создать новый справочник"></label>
                     </div>
+                </div>
+                <div class="dFlex fdc">
+                    <label for="textareaDescription" class="main__label dFlex aic"></label>
+                    <textarea class="main__block-description__textarea main__input" name="textareaDescription"
+                        id="textareaDescription">Описание (подсказка) для</textarea>
                 </div>
                 <div class="main__settings-block__toggle dFlex jcsb">
                     <p>Добавить таблицу элементов</p>

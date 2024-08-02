@@ -181,7 +181,13 @@ window.addEventListener("DOMContentLoaded", () => {
     ".content__block-scrollbar__container-box__text"
   );
 
-  btnsSelect.forEach((btn) => {
+  const pageEmployeesDepartments = document.querySelector(
+    ".employees-department"
+  );
+
+  const btnsDepartment = document.querySelectorAll(".btns__department");
+
+  btnsSelect.forEach((btn, index) => {
     btn.addEventListener("click", () => {
       const target = btn.getAttribute("data-select");
       const targetId = document.getElementById(target);
@@ -192,6 +198,16 @@ window.addEventListener("DOMContentLoaded", () => {
       } else {
         btn.classList.remove("active");
         targetId.classList.remove("active");
+      }
+      if (pageEmployeesDepartments) {
+        btnsDepartment.forEach((btnDepartment, indexDepartment) => {
+          const targetDepartment = btnDepartment.getAttribute(
+            "data-btn-department"
+          );
+          if (target === targetDepartment) {
+            btnDepartment.classList.toggle("active");
+          }
+        });
       }
     });
   });
@@ -209,6 +225,8 @@ window.addEventListener("DOMContentLoaded", () => {
   const closePopupBtn = document.querySelector(
     ".main__container-block__actions-editing__box-popup__list-btn"
   );
+
+  const notificationPage = document.querySelector(".notification__page");
 
   const btnsList = document.querySelectorAll(
     ".main__container-block__actions-editing__box-popup__list button"
@@ -244,9 +262,15 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const rows = document.querySelectorAll(".main__container-block__table-row");
 
+  const popupOverlay = document.querySelector(".popup-overlay");
+
   btnActionsCheck?.addEventListener("click", (e) => {
     btnActionsCheck.classList.toggle("active");
     blockActionsCheck.classList.toggle("active");
+
+    if (notificationPage) {
+      popupOverlay.classList.toggle("active");
+    }
 
     if (blockActionsCheck.classList.contains("active")) {
       closePopup();
@@ -259,6 +283,9 @@ window.addEventListener("DOMContentLoaded", () => {
       blockActionsCheck.classList.remove("active");
       btnActionsCheck.classList.remove("active");
       blockFooterTextDate.style.display = "flex";
+      if (notificationPage) {
+        popupOverlay.classList.remove("active");
+      }
     });
   }
 
@@ -284,7 +311,7 @@ window.addEventListener("DOMContentLoaded", () => {
       btnIdAll.forEach((btn) => {
         btn.style.display = "none";
       });
-      btnId.style.display = "flex";
+      if (btnId) btnId.style.display = "flex";
 
       if (dataTarger === "editLists") {
         rows.forEach((row, index) => {
@@ -434,13 +461,13 @@ window.addEventListener("DOMContentLoaded", () => {
   );
 
   checkboxAll.forEach((checkbox) => {
-    let checkboxesLenth = checkboxAll.length;
+    let checkboxesLength = checkboxAll.length;
     checkbox.addEventListener("change", function (event) {
       let countChecked = document.querySelectorAll(
         ".main__container-block__table-body .input__checkbox[type='checkbox']:checked"
       ).length;
 
-      if (countChecked === checkboxesLenth) {
+      if (countChecked === checkboxesLength) {
         checkboxFilter.checked = true;
         checkboxMinus.style.display = "none";
       } else if (countChecked > 0) {
@@ -572,17 +599,25 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const arrBlockPopups = document.querySelectorAll(".popup");
   const btnAddField = document.querySelector(".btn__create-add__field");
+  const btnCreateDepartment = document.querySelector(
+    ".employees-department .btn__create"
+  );
   const btnModal = document.querySelectorAll(".btn-modal");
+  const btnEditDepartments = document.querySelectorAll(
+    ".btns__department .btn__edit-department"
+  );
   const btnsClose = document.querySelectorAll(".popup .btn__footer");
 
-  const arrBtns = [{ btn: btnAddField }];
+  const arrBtns = [{ btn: btnAddField }, { btn: btnCreateDepartment }];
   const arrViewPopup = [{ blockPopup: arrBlockPopups, btns: arrBtns }];
-  const arrViewPopupEdit = [{ blockPopup: arrBlockPopups, btns: btnModal }];
-  const popupOverlay = document.querySelector(".popup-overlay");
+  const arrViewPopupEdit = [
+    { blockPopup: arrBlockPopups, btns: btnModal },
+    { btns: btnEditDepartments },
+  ];
 
   arrViewPopup.forEach((popup) => {
     popup.btns.forEach((btn) => {
-      btn.btn.addEventListener("click", () => {
+      btn.btn?.addEventListener("click", () => {
         const targetPopup = btn.btn.getAttribute("data-popup");
         const idPopup = document.getElementById(targetPopup);
         idPopup.classList.add("active");
@@ -609,6 +644,35 @@ window.addEventListener("DOMContentLoaded", () => {
       if (popupBlock.classList.contains("active")) {
         popupBlock.classList.remove("active");
         popupOverlay.classList.remove("active");
+      }
+    });
+  });
+
+  const btnsShowLists = document.querySelectorAll(
+    ".inventory-create__volume-btns .footer__texts-doc"
+  );
+
+  btnsShowLists.forEach((btnShow) => {
+    btnShow.addEventListener("click", () => {
+      const dataLists = btnShow.getAttribute("data-lists");
+      const idLists = document.getElementById(dataLists);
+      const inventoryCreatePage = document.querySelector(".inventory__create");
+      const inventoryCreateBtns = document.querySelector(
+        ".inventory-create__volume .footer__box"
+      );
+      const btnSpan = btnShow.querySelector("span");
+      const inventoryCreateBtnsFooter = document.getElementById("deleteVolume");
+      idLists?.classList.toggle("active");
+      if (inventoryCreatePage) {
+        if (idLists.classList.contains("active")) {
+          inventoryCreateBtns.style.display = "none";
+          inventoryCreateBtnsFooter.style.display = "flex";
+          btnSpan.textContent = "Скрыть список";
+        } else {
+          inventoryCreateBtns.style.display = "flex";
+          inventoryCreateBtnsFooter.style.display = "none";
+          btnSpan.textContent = "Показать список";
+        }
       }
     });
   });
