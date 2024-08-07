@@ -32,6 +32,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const propertyAside = document.getElementById("propertyAside");
 
+  const contentAsideBlock = document.querySelector(".content__block-scrollbar");
+
   btnHideMenu.addEventListener("click", (e) => {
     btnHideMenu.classList.toggle("active");
     textHideMenu.forEach((text) => {
@@ -44,6 +46,7 @@ window.addEventListener("DOMContentLoaded", () => {
         iconColorMenu.forEach((icon) => {
           icon.style.fill = "#ffffff";
         });
+        if (contentAsideBlock) contentAsideBlock.style.display = "none";
 
         btnHideMenuLeft.style.backgroundColor = "#172139";
         iconHideMenuLeft.forEach((iconHide) => {
@@ -74,13 +77,14 @@ window.addEventListener("DOMContentLoaded", () => {
           const linkIcon = link.querySelectorAll("svg path");
           for (let i = 0; i <= linkIcon.length; i++) {
             link.addEventListener("mouseover", () => {
-              linkIcon[i].style.fill = "#FF6600";
+              if (linkIcon[i]) linkIcon[i].style.fill = "#FF6600";
             });
             link.addEventListener("mouseout", () => {
-              linkIcon[i].style.fill = "#ffffff";
+              if (linkIcon[i]) linkIcon[i].style.fill = "#ffffff";
             });
           }
         });
+
         iconColorMenuActive.style.fill = "#FF6600";
       } else {
         setTimeout(() => {
@@ -89,6 +93,7 @@ window.addEventListener("DOMContentLoaded", () => {
         }, 300);
         blockHideMenu.style.maxWidth = "100%";
         if (propertyAside) propertyAside.style.maxWidth = "290px";
+        if (contentAsideBlock) contentAsideBlock.style.display = "block";
 
         arrowHideMenuBtn.style.rotate = "0deg";
         iconColorMenu.forEach((icon) => {
@@ -97,18 +102,42 @@ window.addEventListener("DOMContentLoaded", () => {
 
         iconHideMenuLeft.forEach((iconHide) => {
           iconHide.style.fill = "#FF6600";
+          console.log(iconHide);
         });
+
         listsMenuBg.forEach((list) => {
           list.style.backgroundColor = "#ffffff";
           if (list.classList.contains("active")) {
             list.style.backgroundColor = "#172139";
           }
+          list.addEventListener("mouseover", () => {
+            list.style.backgroundColor = "#172139";
+          });
+          list.addEventListener("mouseout", () => {
+            list.style.backgroundColor = "#ffffff";
+          });
         });
+
         linkColorMenu.forEach((link) => {
           link.classList.remove("width");
         });
+
         btnHideMenuLeft.style.backgroundColor = "#ffffff";
+
+        btnHideMenuLeft.addEventListener("mouseover", () => {
+          btnHideMenuLeft.style.backgroundColor = "#172139";
+        });
+
+        btnHideMenuLeft.addEventListener("mouseout", () => {
+          btnHideMenuLeft.style.backgroundColor = "#ffffff";
+        });
+
         iconColorMenuActive.style.fill = "#ffffff";
+
+        iconHideMenuLeft.forEach((iconHide) => {
+          iconHide.style.fill = "#FF6600";
+        });
+        window.location.reload();
       }
     });
   });
@@ -674,6 +703,38 @@ window.addEventListener("DOMContentLoaded", () => {
           btnSpan.textContent = "Показать список";
         }
       }
+    });
+  });
+
+  const tds = document.querySelectorAll(".main__container-block__table-col");
+
+  tds.forEach((td) => {
+    td.style.minWidth = "50px";
+  });
+
+  const btnsHideInput = document.querySelectorAll(
+    ".main__container-block__create-input__btn"
+  );
+
+  const btnsShowInput = document.querySelectorAll(".btn__show-input");
+  btnsShowInput.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const dataShow = btn.getAttribute("data-btn-show");
+      const dataShowBlock = document.querySelector(
+        `[data-btn-show="${dataShow}"]`
+      )?.parentElement;
+      const idInput = document.getElementById(dataShow);
+      idInput?.classList.toggle("active");
+      if (idInput?.classList.contains("active")) {
+        idInput.style.display = "block";
+        dataShowBlock.style.display = "none";
+      }
+      btnsHideInput.forEach((btnHide) => {
+        btnHide.addEventListener("click", () => {
+          if (idInput) idInput.style.display = "none";
+          if (dataShowBlock) dataShowBlock.style.display = "flex";
+        });
+      });
     });
   });
 });
