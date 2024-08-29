@@ -158,7 +158,7 @@
                                 <div class="main__container-block__btns-box dFlex">
                                     <div class="dFlex main__container-block__btns-box__view" id="viewBlockMain">
                                         <button type="button" class="btn btn__tab active">Список задач</button>
-                                        <button type="button" class="btn btn__tab">Логи</button>
+                                        <button type="button" class="btn btn__tab">Лог синхронизации</button>
                                         <button type="button" class="btn btn__tab">Архив</button>
                                     </div>
                                 </div>
@@ -233,132 +233,57 @@
                                                 <span class="main__container-block__table-filter__minus"></span>
                                             </div>
                                         </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic">
-                                            <div class="dFlex main__container-block__col-box">
-                                                <button type="button" class="btn__show-input" data-btn-show="btnName2">
-                                                    <img src="./assets/images/icons/search.svg" alt="Поиск"></button>
-                                                Название
-                                                <img class="main__container-block__lists-property__text-arrow"
-                                                    src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
-                                            </div>
-                                            <label class="main__container-block__create-input__label input__label-name"
-                                                for="textSearchFilterName" id="btnName2">
-                                                <button class="main__container-block__create-input__btn" type="button">
-                                                    <img class="main__container-block__create-input__btn-icon"
-                                                        src="./assets/images/icons/search.svg" alt="Кнопка поиска">
-                                                </button>
-                                                <input class="inputSearch" type="text" placeholder="Название"
-                                                    id="textSearchFilterName" name="textSearchFilterName">
-                                            </label>
-                                        </div>
-
-                                        <div
-                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic">
-                                            <div class="dFlex main__container-block__col-box">
-                                                <button type="button" class="btn__show-input"
-                                                    data-btn-show="btnDateStart0">
-                                                    <img src="./assets/images/icons/search.svg" alt="Поиск"></button>
-                                                Дата начала
-                                                <img class="main__container-block__lists-property__text-arrow"
-                                                    src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
-                                            </div>
-                                            <label class="main__container-block__create-input__label input__label-name"
-                                                for="textSearchFilterName" id="btnDateStart0">
-                                                <button class="main__container-block__create-input__btn" type="button">
-                                                    <img class="main__container-block__create-input__btn-icon"
-                                                        src="./assets/images/icons/search.svg" alt="Кнопка поиска">
-                                                </button>
-                                                <input class="inputSearch" type="text" placeholder="Название"
-                                                    id="textSearchFilterName" name="textSearchFilterName">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic">
-                                            <div class="dFlex main__container-block__col-box">
-                                                <button type="button" class="btn__show-input"
-                                                    data-btn-show="btnShortTerm0">
-                                                    <img src="./assets/images/icons/search.svg" alt="Поиск"></button>
-                                                Кр-й срок
-                                                <img class="main__container-block__lists-property__text-arrow"
-                                                    src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
-                                            </div>
-                                            <label class="main__container-block__create-input__label input__label-name"
-                                                for="textSearchFilterName" id="btnShortTerm0">
-                                                <button class="main__container-block__create-input__btn" type="button">
-                                                    <img class="main__container-block__create-input__btn-icon"
-                                                        src="./assets/images/icons/search.svg" alt="Кнопка поиска">
-                                                </button>
-                                                <input class="inputSearch" type="text" placeholder="Название"
-                                                    id="textSearchFilterName" name="textSearchFilterName">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic">
-                                            <div class="dFlex main__container-block__col-box">
-                                                <button type="button" class="btn__show-input"
-                                                    data-btn-show="btnResponsible0">
-                                                    <img src="./assets/images/icons/search.svg" alt="Поиск"></button>
-                                                Ответственный
-                                                <img class="main__container-block__lists-property__text-arrow"
-                                                    src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
-                                            </div>
-                                            <label class="main__container-block__create-input__label input__label-name"
-                                                for="textSearchFilterName" id="btnResponsible0">
-                                                <button class="main__container-block__create-input__btn" type="button">
-                                                    <img class="main__container-block__create-input__btn-icon"
-                                                        src="./assets/images/icons/search.svg" alt="Кнопка поиска">
-                                                </button>
-                                                <input class="inputSearch" type="text" placeholder="Название"
-                                                    id="textSearchFilterName" name="textSearchFilterName">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic">
-                                            <div class="dFlex main__container-block__col-box">
-                                                <button type="button" class="btn__show-input"
-                                                    data-btn-show="btnLocation1">
-                                                    <img src="./assets/images/icons/search.svg" alt="Поиск"></button>
-                                                Локации
-                                                <img class="main__container-block__lists-property__text-arrow"
-                                                    src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
-                                            </div>
-                                            <label class="main__container-block__create-input__label input__label-name"
-                                                for="textSearchFilterLocation" id="btnLocation1">
-                                                <button class="main__container-block__create-input__btn" type="button">
-                                                    <img class="main__container-block__create-input__btn-icon"
-                                                        src="./assets/images/icons/search.svg" alt="Кнопка поиска">
-                                                </button>
-                                                <input class="inputSearch" type="text" placeholder="Локации"
-                                                    id="textSearchFilterLocation" name="textSearchFilterLocation">
-                                            </label>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <div class="dFlex main__container-block__col-box">
-                                                <button type="button" class="btn__show-input" data-btn-show="btnName3">
-                                                    <img src="./assets/images/icons/search.svg" alt="Поиск"></button>
-                                                МОЛ
-                                                <img class="main__container-block__lists-property__text-arrow"
-                                                    src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
-                                            </div>
-                                            <label class="main__container-block__create-input__label input__label-name"
-                                                for="textSearchFilter" id="btnName3">
-                                                <button class="main__container-block__create-input__btn" type="button">
-                                                    <img class="main__container-block__create-input__btn-icon"
-                                                        src="./assets/images/icons/search.svg" alt="Кнопка поиска">
-                                                </button>
-                                                <input class="inputSearch" type="text" placeholder="МОЛ"
-                                                    id="textSearchFilter" name="textSearchFilter">
-                                            </label>
-                                        </div>
                                         <p
                                             class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
+                                            <img src="./assets/images/icons/search.svg" alt="Поиск">
+                                            Название
+                                            <img class="main__container-block__lists-property__text-arrow"
+                                                src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
+                                        </p>
+                                        <p
+                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
+                                            <img src="./assets/images/icons/search.svg" alt="Поиск">
+                                            Дата начала
+                                            <img class="main__container-block__lists-property__text-arrow"
+                                                src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
+                                        </p>
+                                        <p
+                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
+                                            <img src="./assets/images/icons/search.svg" alt="Поиск">
+                                            Кр-й срок
+                                            <img class="main__container-block__lists-property__text-arrow"
+                                                src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
+                                        </p>
+                                        <p
+                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
+                                            <img src="./assets/images/icons/search.svg" alt="Поиск">
+                                            Ответственный
+                                            <img class="main__container-block__lists-property__text-arrow"
+                                                src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
+                                        </p>
+                                        <p
+                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
+                                            <img src="./assets/images/icons/search.svg" alt="Поиск">
+                                            Локации
+                                            <img class="main__container-block__lists-property__text-arrow"
+                                                src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
+                                        </p>
+                                        <p
+                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
+                                            МОЛ
+                                            <img class="main__container-block__lists-property__text-arrow"
+                                                src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
+                                        </p>
+                                        <p
+                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
+                                            <img src="./assets/images/icons/search.svg" alt="Поиск">
                                             Статус
                                             <img class="main__container-block__lists-property__text-arrow"
                                                 src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
                                         </p>
                                         <p
                                             class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
+                                            <img src="./assets/images/icons/search.svg" alt="Поиск">
                                             Утеряно
                                             <img class="main__container-block__lists-property__text-arrow"
                                                 src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
@@ -369,26 +294,13 @@
                                             <img class="main__container-block__lists-property__text-arrow"
                                                 src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
                                         </p>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic">
-                                            <div class="dFlex main__container-block__col-box">
-                                                <button type="button" class="btn__show-input"
-                                                    data-btn-show="btnDescription1">
-                                                    <img src="./assets/images/icons/search.svg" alt="Поиск"></button>
-                                                Описание
-                                                <img class="main__container-block__lists-property__text-arrow"
-                                                    src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
-                                            </div>
-                                            <label class="main__container-block__create-input__label input__label-name"
-                                                for="btnDescription" id="btnDescription1">
-                                                <button class="main__container-block__create-input__btn" type="button">
-                                                    <img class="main__container-block__create-input__btn-icon"
-                                                        src="./assets/images/icons/search.svg" alt="Кнопка поиска">
-                                                </button>
-                                                <input class="inputSearch" type="text" placeholder="Описание"
-                                                    id="btnDescription" name="btnDescription">
-                                            </label>
-                                        </div>
+                                        <p
+                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
+                                            <img src="./assets/images/icons/search.svg" alt="Поиск">
+                                            Описание
+                                            <img class="main__container-block__lists-property__text-arrow"
+                                                src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="main__container-block__table-body">

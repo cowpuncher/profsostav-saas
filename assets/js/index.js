@@ -5,6 +5,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const textHideMenu = document.querySelectorAll(
     ".content__block-menu__link span"
   );
+  const blockCategory = document.querySelector(".content__block-scrollbar");
   const textHideMenuBtn = document.querySelector(
     ".content__block-menu__hide span"
   );
@@ -31,9 +32,6 @@ window.addEventListener("DOMContentLoaded", () => {
   const listsMenuBg = document.querySelectorAll(".content__block-menu__list");
 
   const propertyAside = document.getElementById("propertyAside");
-
-  const contentAsideBlock = document.querySelector(".content__block-scrollbar");
-
   btnHideMenu.addEventListener("click", (e) => {
     btnHideMenu.classList.toggle("active");
     textHideMenu.forEach((text) => {
@@ -46,8 +44,7 @@ window.addEventListener("DOMContentLoaded", () => {
         iconColorMenu.forEach((icon) => {
           icon.style.fill = "#ffffff";
         });
-        if (contentAsideBlock) contentAsideBlock.style.display = "none";
-
+        if (blockCategory) blockCategory.style.display = "none";
         btnHideMenuLeft.style.backgroundColor = "#172139";
         iconHideMenuLeft.forEach((iconHide) => {
           iconHide.style.fill = "#ffffff";
@@ -77,23 +74,28 @@ window.addEventListener("DOMContentLoaded", () => {
           const linkIcon = link.querySelectorAll("svg path");
           for (let i = 0; i <= linkIcon.length; i++) {
             link.addEventListener("mouseover", () => {
-              if (linkIcon[i]) linkIcon[i].style.fill = "#FF6600";
+              linkIcon[i].style.fill = "#FF6600";
+              text.style.color = "#FF6600";
+              textHideMenuBtn.style.color = "#FF6600";
             });
             link.addEventListener("mouseout", () => {
-              if (linkIcon[i]) linkIcon[i].style.fill = "#ffffff";
+              linkIcon[i].style.fill = "#ffffff";
+              text.style.color = "#ffffff";
+              textHideMenuBtn.style.color = "#ffffff";
             });
           }
         });
-
         iconColorMenuActive.style.fill = "#FF6600";
       } else {
         setTimeout(() => {
           textHideMenuBtn.style.display = "block";
           text.style.display = "block";
+          console.log(textHideMenuBtn);
+
+          if (blockCategory) blockCategory.style.display = "block";
         }, 300);
         blockHideMenu.style.maxWidth = "100%";
         if (propertyAside) propertyAside.style.maxWidth = "290px";
-        if (contentAsideBlock) contentAsideBlock.style.display = "block";
 
         arrowHideMenuBtn.style.rotate = "0deg";
         iconColorMenu.forEach((icon) => {
@@ -102,42 +104,18 @@ window.addEventListener("DOMContentLoaded", () => {
 
         iconHideMenuLeft.forEach((iconHide) => {
           iconHide.style.fill = "#FF6600";
-          console.log(iconHide);
         });
-
         listsMenuBg.forEach((list) => {
           list.style.backgroundColor = "#ffffff";
           if (list.classList.contains("active")) {
             list.style.backgroundColor = "#172139";
           }
-          list.addEventListener("mouseover", () => {
-            list.style.backgroundColor = "#172139";
-          });
-          list.addEventListener("mouseout", () => {
-            list.style.backgroundColor = "#ffffff";
-          });
         });
-
         linkColorMenu.forEach((link) => {
           link.classList.remove("width");
         });
-
         btnHideMenuLeft.style.backgroundColor = "#ffffff";
-
-        btnHideMenuLeft.addEventListener("mouseover", () => {
-          btnHideMenuLeft.style.backgroundColor = "#172139";
-        });
-
-        btnHideMenuLeft.addEventListener("mouseout", () => {
-          btnHideMenuLeft.style.backgroundColor = "#ffffff";
-        });
-
         iconColorMenuActive.style.fill = "#ffffff";
-
-        iconHideMenuLeft.forEach((iconHide) => {
-          iconHide.style.fill = "#FF6600";
-        });
-        window.location.reload();
       }
     });
   });
@@ -294,7 +272,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const popupOverlay = document.querySelector(".popup-overlay");
 
   btnActionsCheck?.addEventListener("click", (e) => {
-    btnActionsCheck.classList.toggle("active");
+    btnActionsCheck.classList.add("active");
     blockActionsCheck.classList.toggle("active");
 
     if (notificationPage) {
@@ -304,6 +282,7 @@ window.addEventListener("DOMContentLoaded", () => {
     if (blockActionsCheck.classList.contains("active")) {
       closePopup();
       blockFooterTextDate.style.display = "none";
+      document.addEventListener("click", handleOutsideClick); // новый код
     }
   });
 
@@ -315,7 +294,25 @@ window.addEventListener("DOMContentLoaded", () => {
       if (notificationPage) {
         popupOverlay.classList.remove("active");
       }
+      document.removeEventListener("click", handleOutsideClick); // новый код
     });
+  }
+
+  // новый код
+  function handleOutsideClick(event) {
+    // Проверяем, кликнули ли за пределами blockActionsCheck и btnActionsCheck
+    if (
+      !blockActionsCheck.contains(event.target) &&
+      !btnActionsCheck.contains(event.target)
+    ) {
+      blockActionsCheck.classList.remove("active");
+      btnActionsCheck.classList.remove("active");
+      blockFooterTextDate.style.display = "flex";
+      if (notificationPage) {
+        popupOverlay.classList.remove("active");
+      }
+      document.removeEventListener("click", handleOutsideClick); // Убираем обработчик после выполнения
+    }
   }
 
   // Обработчик события для кнопок в btnsList
@@ -334,15 +331,15 @@ window.addEventListener("DOMContentLoaded", () => {
 
   btnsPopupAll.forEach((btnPopup) => {
     btnPopup.addEventListener("click", () => {
-      const dataTarger = btnPopup.getAttribute("data-btn");
-      const btnId = document.getElementById(dataTarger);
+      const dataTarget = btnPopup.getAttribute("data-btn");
+      const btnId = document.getElementById(dataTarget);
       const btnIdAll = document.querySelectorAll(".footer__box");
       btnIdAll.forEach((btn) => {
         btn.style.display = "none";
       });
       if (btnId) btnId.style.display = "flex";
 
-      if (dataTarger === "editLists") {
+      if (dataTarget === "editLists") {
         rows.forEach((row, index) => {
           const checkbox = row.querySelector(".input__checkbox");
           const blockText = row.querySelectorAll(
@@ -390,6 +387,7 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
   // открытия селект количества показываемых имуществ
 
   const selectSingle = document.querySelector(
@@ -458,6 +456,16 @@ window.addEventListener("DOMContentLoaded", () => {
         select_single.setAttribute("data-state", "active");
         select_title.style.color = "#ff6600";
         select_single.classList.toggle("active");
+        // Добавляем обработчик клика на документ для закрытия при клике вне элемента
+        document.addEventListener("click", (event) => {
+          if (
+            !select_single.contains(event.target) &&
+            !select_title.contains(event.target)
+          ) {
+            select_single.setAttribute("data-state", "");
+            select_single.classList.remove("active");
+          }
+        });
       }
     });
 
@@ -468,6 +476,17 @@ window.addEventListener("DOMContentLoaded", () => {
         select_single.setAttribute("data-state", "");
       });
     });
+  }
+
+  function handleOutsideClickSelect(event) {
+    if (
+      !select_single.contains(event.target) &&
+      !select_title.contains(event.target)
+    ) {
+      select_single.setAttribute("data-state", "");
+      select_single.classList.remove("active");
+      document.removeEventListener("click", handleOutsideClickSelect); // Убираем обработчик
+    }
   }
 
   // // Toggle menu
@@ -706,35 +725,43 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  const tds = document.querySelectorAll(".main__container-block__table-col");
+  // tooltip
 
-  tds.forEach((td) => {
-    td.style.minWidth = "50px";
-  });
+  const tooltips = document.querySelectorAll(".tooltip");
+  const btnHelps = document.querySelectorAll(".main__label svg");
 
-  const btnsHideInput = document.querySelectorAll(
-    ".main__container-block__create-input__btn"
-  );
+  btnHelps.forEach((btnHelp, indexBtn) => {
+    tooltips.forEach((tooltip, indexTooltip) => {
+      btnHelp.addEventListener("mouseover", () => {
+        if (indexBtn === indexTooltip) {
+          tooltip.style.opacity = "1";
+        }
+      });
 
-  const btnsShowInput = document.querySelectorAll(".btn__show-input");
-  btnsShowInput.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const dataShow = btn.getAttribute("data-btn-show");
-      const dataShowBlock = document.querySelector(
-        `[data-btn-show="${dataShow}"]`
-      )?.parentElement;
-      const idInput = document.getElementById(dataShow);
-      idInput?.classList.toggle("active");
-      if (idInput?.classList.contains("active")) {
-        idInput.style.display = "block";
-        dataShowBlock.style.display = "none";
-      }
-      btnsHideInput.forEach((btnHide) => {
-        btnHide.addEventListener("click", () => {
-          if (idInput) idInput.style.display = "none";
-          if (dataShowBlock) dataShowBlock.style.display = "flex";
-        });
+      btnHelp.addEventListener("mouseout", () => {
+        if (indexBtn === indexTooltip) {
+          tooltip.style.opacity = "0";
+        }
       });
     });
   });
+  
+  // search table 
+ // let formActivedBtn = document.querySelectorAll();
+
+    $('.formActivedBtn').on("click", function(e){
+        $('.formSearchColTable.active').removeClass('active');
+        console.log($(this).next().addClass('active'));
+    });
+    
+    $(document).mouseup( function(e){ // событие клика по веб-документу
+		var div = $( ".formSearchColTable.active" ); // тут указываем ID элемента
+		if ( !div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
+			$('.formSearchColTable.active').removeClass('active');
+		}
+	});
+  
+  
+  
 });
