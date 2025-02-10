@@ -1068,6 +1068,7 @@ th:hover .resize-handle {
 }
 
 .select__property {
+  font-family: "Futura PT", sans-serif;
   position: relative;
   max-width: 100%;
   width: 100%;
@@ -1368,24 +1369,30 @@ th:hover .resize-handle {
   margin-bottom: 20px;
 }
 
-.main__container-block__create-box {
+/* .main__container-block__create-box {
   max-width: 571px;
   width: 100%;
+} */
+.main__container-block__create-box {
+  width: 100%;
+  justify-content: flex-start;
+  gap: 15px;
 }
-
 .btn__create {
   padding: 16px;
   gap: 10px;
   text-transform: uppercase;
 }
-
-.btn__create:nth-of-type(1) {
+.btn__create {
+  width: auto;
+}
+/* .btn__create:nth-of-type(1) {
   max-width: 286px;
 }
 
 .btn__create:nth-of-type(2) {
   max-width: 255px;
-}
+} */
 
 .main__container-block__create-inputs {
   max-width: 100%;
@@ -2476,6 +2483,7 @@ th:hover .resize-handle {
 /* footer */
 .footer {
   padding: 30px 0;
+  background: #fff;
 }
 
 .footer__block {
