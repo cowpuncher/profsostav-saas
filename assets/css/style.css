@@ -941,7 +941,8 @@ th:hover .resize-handle {
 
 .main__edit {
   overflow-y: auto;
-  height: 920px;
+  /* height: 920px; */
+  height: 78vh;
   width: 100%;
 }
 
