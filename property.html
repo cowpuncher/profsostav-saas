@@ -7,6 +7,13 @@
     <link rel="icon" href="./assets/images/icons/logo.svg" type="image/svg">
     <link rel="stylesheet" href="./assets/fonts/fonts.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
     <title>Имущество</title>
 </head>
 
@@ -355,7 +362,9 @@
                                             </label>
                                         </td> 
                                         <td>
-                                            <span class="image"><img src="./assets/images/property.png" alt=""></span>
+                                            <a href="./assets/images/property.png" data-fancybox="gallery"n class="image">
+                                                <img src="./assets/images/property.png" alt="">
+                                            </a>
                                         </td>
                                         <td> <span>Имущество</span> </td>
                                         <td> <span>Юшин Дмитрий Александович</span> </td> 
@@ -386,7 +395,9 @@
                                             </label>
                                         </td> 
                                         <td>
-                                            <span class="image"><img src="./assets/images/property.png" alt=""></span>
+                                            <a href="./assets/images/property.png" data-fancybox="gallery"n class="image">
+                                                <img src="./assets/images/property.png" alt="">
+                                            </a>
                                         </td>
                                         <td> <span>Имущество</span> </td>
                                         <td> <span>Юшин Дмитрий Александович</span> </td> 
@@ -417,7 +428,9 @@
                                             </label>
                                         </td> 
                                         <td>
-                                            <span class="image"><img src="./assets/images/property.png" alt=""></span>
+                                            <a href="./assets/images/property.png" data-fancybox="gallery"n class="image">
+                                                <img src="./assets/images/property.png" alt="">
+                                            </a>
                                         </td>
                                         <td> <span>Имущество</span> </td>
                                         <td> <span>Юшин Дмитрий Александович</span> </td> 
@@ -448,7 +461,9 @@
                                             </label>
                                         </td> 
                                         <td>
-                                            <span class="image"><img src="./assets/images/property.png" alt=""></span>
+                                            <a href="./assets/images/property.png" data-fancybox="gallery"n class="image">
+                                                <img src="./assets/images/property.png" alt="">
+                                            </a>
                                         </td>
                                         <td> <span>Имущество</span> </td>
                                         <td> <span>Юшин Дмитрий Александович</span> </td> 
@@ -479,7 +494,9 @@
                                             </label>
                                         </td> 
                                         <td>
-                                            <span class="image"><img src="./assets/images/property.png" alt=""></span>
+                                            <a href="./assets/images/property.png" data-fancybox="gallery"n class="image">
+                                                <img src="./assets/images/property.png" alt="">
+                                            </a>
                                         </td>
                                         <td> <span>Имущество</span> </td>
                                         <td> <span>Юшин Дмитрий Александович</span> </td> 
@@ -786,6 +803,13 @@
             
               header.querySelector('.resize-handle').addEventListener('mousedown', initResize);
             });
+
+
+
+
+            Fancybox.bind('[data-fancybox="gallery"]', {
+                // Your custom options for a specific gallery
+              });
         } 
         
         document.addEventListener("DOMContentLoaded", ready);

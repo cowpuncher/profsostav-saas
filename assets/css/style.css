@@ -485,7 +485,10 @@ label.mainCheckbox.checkbox .customCheckbox {
     background: #fff;
     border-color: transparent;
 }
-
+a.image {
+  text-decoration: none;
+  border: 0;
+}
 
 
 .resize-handle {
@@ -760,7 +763,7 @@ th:hover .resize-handle {
 /* main */
 
 .main {
-  max-width: 81%;
+  max-width: 100%;
   width: 100%;
   padding-right: 30px;
 }
