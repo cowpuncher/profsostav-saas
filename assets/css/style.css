@@ -410,8 +410,8 @@ table {
     minmax(3%, 5%)    
     minmax(12%, 14%)    
     minmax(5%, 5%)    
-    minmax(6%, 6%)    
-    minmax(8%, 6%)    
+    /* minmax(6%, 6%)    
+    minmax(8%, 6%)     */
     minmax(5%, 34%);
 }
 
