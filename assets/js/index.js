@@ -765,3 +765,23 @@ window.addEventListener("DOMContentLoaded", () => {
   
   
 });
+
+// Скролл меню
+window.addEventListener("scroll", function () {
+    let header = document.querySelector(".header");
+    let logoText = document.querySelector(".header__block-logo__text");
+    let exitBlock = document.querySelector(".header__block-exit");
+    let contentBlock = document.querySelector(".content__block");
+
+    if (window.scrollY > 70) {
+        header.style.padding = "10px 0 10px";  
+        logoText.style.display = "none";  
+        exitBlock.style.padding = "0px 0 5px";  
+        contentBlock.style.padding = "15px 0 36px";
+    } else {
+        header.style.padding = "";  
+        logoText.style.display = "";  
+        exitBlock.style.padding = "";  
+        contentBlock.style.padding = "";
+    }
+});
