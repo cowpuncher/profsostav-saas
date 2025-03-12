@@ -3469,7 +3469,7 @@ th:hover .resize-handle {
   font-size: 12px;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (min-width: 998px) {
     body {
         font-size: 13px;
     }
