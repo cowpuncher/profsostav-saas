@@ -377,7 +377,7 @@ tbody tr td:last-child {
     border-radius: 0 5px 5px 0;
 }
 tbody tr td {
-    padding: 10px;
+    padding: 0px 10px;
 }
 tbody tr:first-child td {
     margin-top: 5px;
@@ -1862,7 +1862,7 @@ th:hover .resize-handle {
   padding-right: 43px;
   background-color: var(--color-11);
   border-radius: 5px;
-  padding: 10px;
+  padding: 0px 10px;
   color: var(--color-4);
 }
 
@@ -3547,3 +3547,6 @@ th:hover .resize-handle {
         overflow: hidden;
         text-overflow: ellipsis;
     }
+table > tbody > tr > td > a > img {
+    max-height: 20px;
+}
