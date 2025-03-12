@@ -3559,3 +3559,7 @@ table > tbody > tr > td > a > img {
     max-height: 20px;
     padding-top: 3px;
 }
+.header__block-logo__text-icon {
+    max-width: 200px;
+    width: 100%;
+}
