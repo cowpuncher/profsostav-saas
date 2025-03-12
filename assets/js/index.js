@@ -1,124 +1,131 @@
 window.addEventListener("DOMContentLoaded", () => {
   // показ и открытие меню бокового
   const btnHideMenu = document.querySelector(".content__block-menu__hide");
-  const blockHideMenu = document.querySelector(".content__block-menu");
-  const textHideMenu = document.querySelectorAll(
-    ".content__block-menu__link span"
-  );
-  const blockCategory = document.querySelector(".content__block-scrollbar");
-  const textHideMenuBtn = document.querySelector(
-    ".content__block-menu__hide span"
-  );
-  const arrowHideMenuBtn = document.querySelector(
-    ".content__block-menu__hide svg"
-  );
-
-  const iconColorMenu = document.querySelectorAll(
-    ".content__block-menu__link svg path"
-  );
-
-  const linkColorMenu = document.querySelectorAll(".content__block-menu__link");
-
-  const iconColorMenuActive = document.querySelector(
-    ".content__block-menu__link.active svg path"
-  );
-
-  const iconHideMenuLeft = document.querySelectorAll(
-    ".content__block-menu__hide svg path"
-  );
-
-  const btnHideMenuLeft = document.querySelector(".content__block-menu__hide");
-
-  const listsMenuBg = document.querySelectorAll(".content__block-menu__list");
-
   const propertyAside = document.getElementById("propertyAside");
-  btnHideMenu.addEventListener("click", (e) => {
-    btnHideMenu.classList.toggle("active");
-    textHideMenu.forEach((text) => {
-      if (btnHideMenu.classList.contains("active")) {
-        text.style.display = "none";
-        textHideMenuBtn.style.display = "none";
-        blockHideMenu.style.maxWidth = "49px"; // ширина блока
-        if (propertyAside) propertyAside.style.maxWidth = "49px";
-        arrowHideMenuBtn.style.rotate = "180deg"; // переворот стрелки
-        iconColorMenu.forEach((icon) => {
-          icon.style.fill = "#ffffff";
-        });
-        if (blockCategory) blockCategory.style.display = "none";
-        btnHideMenuLeft.style.backgroundColor = "#172139";
-        iconHideMenuLeft.forEach((iconHide) => {
-          iconHide.style.fill = "#ffffff";
-        });
+  
 
-        // при наведении на кнопку "скрыть" меняется Bg и color icon
-
-        btnHideMenuLeft.addEventListener("mouseover", () => {
-          iconHideMenuLeft.forEach((iconHide) => {
-            iconHide.style.fill = "#FF6600";
-          });
-        });
-        btnHideMenuLeft.addEventListener("mouseout", () => {
-          iconHideMenuLeft.forEach((iconHide) => {
-            iconHide.style.fill = "#ffffff";
-          });
-        });
-
-        // bg кнопки при ширине 49px
-
-        listsMenuBg.forEach((list) => {
-          list.style.backgroundColor = "#172139";
-        });
-        // при наведении на кнопки меняется Bg и color icon
-
-        linkColorMenu.forEach((link) => {
-          const linkIcon = link.querySelectorAll("svg path");
-          for (let i = 0; i <= linkIcon.length; i++) {
-            link.addEventListener("mouseover", () => {
-              linkIcon[i].style.fill = "#FF6600";
-              text.style.color = "#FF6600";
-              textHideMenuBtn.style.color = "#FF6600";
-            });
-            link.addEventListener("mouseout", () => {
-              linkIcon[i].style.fill = "#ffffff";
-              text.style.color = "#ffffff";
-              textHideMenuBtn.style.color = "#ffffff";
-            });
-          }
-        });
-        iconColorMenuActive.style.fill = "#FF6600";
-      } else {
-        setTimeout(() => {
-          textHideMenuBtn.style.display = "block";
-          text.style.display = "block";
-          console.log(textHideMenuBtn);
-
-          if (blockCategory) blockCategory.style.display = "block";
-        }, 300);
-        blockHideMenu.style.maxWidth = "100%";
-        if (propertyAside) propertyAside.style.maxWidth = "290px";
-
-        arrowHideMenuBtn.style.rotate = "0deg";
-        iconColorMenu.forEach((icon) => {
-          icon.style.fill = "#FF6600";
-        });
-
-        iconHideMenuLeft.forEach((iconHide) => {
-          iconHide.style.fill = "#FF6600";
-        });
-        listsMenuBg.forEach((list) => {
-          list.style.backgroundColor = "#ffffff";
-          if (list.classList.contains("active")) {
-            list.style.backgroundColor = "#172139";
-          }
-        });
-        linkColorMenu.forEach((link) => {
-          link.classList.remove("width");
-        });
-        btnHideMenuLeft.style.backgroundColor = "#ffffff";
-        iconColorMenuActive.style.fill = "#ffffff";
-      }
-    });
+  btnHideMenu.addEventListener('click', e => {
+    e.currentTarget.classList.toggle('close');
+    propertyAside.classList.toggle('close');
   });
+  // const blockHideMenu = document.querySelector(".content__block-menu");
+  // const textHideMenu = document.querySelectorAll(
+  //   ".content__block-menu__link span"
+  // );
+  // const blockCategory = document.querySelector(".content__block-scrollbar");
+  // const textHideMenuBtn = document.querySelector(
+  //   ".content__block-menu__hide span"
+  // );
+  // const arrowHideMenuBtn = document.querySelector(
+  //   ".content__block-menu__hide svg"
+  // );
+
+  // const iconColorMenu = document.querySelectorAll(
+  //   ".content__block-menu__link svg path"
+  // );
+
+  // const linkColorMenu = document.querySelectorAll(".content__block-menu__link");
+
+  // const iconColorMenuActive = document.querySelector(
+  //   ".content__block-menu__link.active svg path"
+  // );
+
+  // const iconHideMenuLeft = document.querySelectorAll(
+  //   ".content__block-menu__hide svg path"
+  // );
+
+  // const btnHideMenuLeft = document.querySelector(".content__block-menu__hide");
+
+  // const listsMenuBg = document.querySelectorAll(".content__block-menu__list");
+
+  // const propertyAside = document.getElementById("propertyAside");
+  // btnHideMenu.addEventListener("click", (e) => {
+  //   btnHideMenu.classList.toggle("active");
+  //   textHideMenu.forEach((text) => {
+  //     if (btnHideMenu.classList.contains("active")) {
+  //       text.style.display = "none";
+  //       textHideMenuBtn.style.display = "none";
+  //       blockHideMenu.style.maxWidth = "49px"; // ширина блока
+  //       if (propertyAside) propertyAside.style.maxWidth = "49px";
+  //       arrowHideMenuBtn.style.rotate = "180deg"; // переворот стрелки
+  //       iconColorMenu.forEach((icon) => {
+  //         icon.style.fill = "#ffffff";
+  //       });
+  //       if (blockCategory) blockCategory.style.display = "none";
+  //       btnHideMenuLeft.style.backgroundColor = "#172139";
+  //       iconHideMenuLeft.forEach((iconHide) => {
+  //         iconHide.style.fill = "#ffffff";
+  //       });
+
+  //       // при наведении на кнопку "скрыть" меняется Bg и color icon
+
+  //       btnHideMenuLeft.addEventListener("mouseover", () => {
+  //         iconHideMenuLeft.forEach((iconHide) => {
+  //           iconHide.style.fill = "#FF6600";
+  //         });
+  //       });
+  //       btnHideMenuLeft.addEventListener("mouseout", () => {
+  //         iconHideMenuLeft.forEach((iconHide) => {
+  //           iconHide.style.fill = "#ffffff";
+  //         });
+  //       });
+
+  //       // bg кнопки при ширине 49px
+
+  //       listsMenuBg.forEach((list) => {
+  //         list.style.backgroundColor = "#172139";
+  //       });
+  //       // при наведении на кнопки меняется Bg и color icon
+
+  //       linkColorMenu.forEach((link) => {
+  //         const linkIcon = link.querySelectorAll("svg path");
+  //         for (let i = 0; i <= linkIcon.length; i++) {
+  //           link.addEventListener("mouseover", () => {
+  //             linkIcon[i].style.fill = "#FF6600";
+  //             text.style.color = "#FF6600";
+  //             textHideMenuBtn.style.color = "#FF6600";
+  //           });
+  //           link.addEventListener("mouseout", () => {
+  //             linkIcon[i].style.fill = "#ffffff";
+  //             text.style.color = "#ffffff";
+  //             textHideMenuBtn.style.color = "#ffffff";
+  //           });
+  //         }
+  //       });
+  //       iconColorMenuActive.style.fill = "#FF6600";
+  //     } else {
+  //       setTimeout(() => {
+  //         textHideMenuBtn.style.display = "block";
+  //         text.style.display = "block";
+  //         console.log(textHideMenuBtn);
+
+  //         if (blockCategory) blockCategory.style.display = "block";
+  //       }, 300);
+  //       blockHideMenu.style.maxWidth = "100%";
+  //       if (propertyAside) propertyAside.style.maxWidth = "290px";
+
+  //       arrowHideMenuBtn.style.rotate = "0deg";
+  //       iconColorMenu.forEach((icon) => {
+  //         icon.style.fill = "#FF6600";
+  //       });
+
+  //       iconHideMenuLeft.forEach((iconHide) => {
+  //         iconHide.style.fill = "#FF6600";
+  //       });
+  //       listsMenuBg.forEach((list) => {
+  //         list.style.backgroundColor = "#ffffff";
+  //         if (list.classList.contains("active")) {
+  //           list.style.backgroundColor = "#172139";
+  //         }
+  //       });
+  //       linkColorMenu.forEach((link) => {
+  //         link.classList.remove("width");
+  //       });
+  //       btnHideMenuLeft.style.backgroundColor = "#ffffff";
+  //       iconColorMenuActive.style.fill = "#ffffff";
+  //     }
+  //   });
+  // });
 
   // показ и открытие меню вверх
 
