@@ -377,7 +377,7 @@ tbody tr td:last-child {
     border-radius: 0 5px 5px 0;
 }
 tbody tr td {
-    padding: 0px 10px;
+    padding: 3px 10px;
 }
 tbody tr:first-child td {
     margin-top: 5px;
@@ -3557,4 +3557,5 @@ th:hover .resize-handle {
     }
 table > tbody > tr > td > a > img {
     max-height: 20px;
+    padding-top: 3px;
 }
