@@ -377,7 +377,7 @@ tbody tr td:last-child {
     border-radius: 0 5px 5px 0;
 }
 tbody tr td {
-    padding: 3px 10px;
+    padding: 5px 10px;
 }
 tbody tr:first-child td {
     margin-top: 5px;
@@ -612,7 +612,7 @@ th:hover .resize-handle {
 
 .content__block-menu__hide {
   font-family: "Futura PT", sans-serif;
-  padding: 21px 0 24px;
+  padding: 15px 0 18px;
   gap: 15px;
   font-size: 17px;
   color: var(--color-3);
