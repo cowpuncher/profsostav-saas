@@ -419,12 +419,23 @@ table {
 td {
     display: flex;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
   /*   overflow: auto;
   flex-wrap: nowrap;
   white-space: nowrap */
 }
-
+.tooltipImage {
+  position: absolute;
+  z-index: 1;
+  width: 300px;
+  display: none;
+}
+.image:hover .tooltipImage  {
+  display: block;
+}
+.tooltipImage img {
+  width: 100%;
+}
 thead,
 tbody,
 tr {
@@ -470,6 +481,7 @@ label.checkbox {
 table a {
     color: var(--color-3);
     border-bottom: 1px solid var(--color-3);
+    position: relative;
 }
 label.checkbox input {
     display: none;
@@ -3588,7 +3600,7 @@ th:hover .resize-handle {
         overflow: hidden;
         text-overflow: ellipsis;
     }
-table > tbody > tr > td > a > img {
+table > tbody > tr > td > .image > img {
     max-height: 20px;
     padding-top: 3px;
 }
