@@ -173,8 +173,8 @@ window.addEventListener("DOMContentLoaded", () => {
       }
       titleMain.style.marginBottom = "0";
     } else {
-      blockViewMenuTopGap.style.gap = "20px";
-      blockViewMenuTopGap.style.marginBottom = "25px";
+      // blockViewMenuTopGap.style.gap = "20px";
+      // blockViewMenuTopGap.style.marginBottom = "25px";
       mainBlockSinchrBtn.style.display = "flex";
       btnHideMenuTop.textContent = "Скрыть меню";
       headerBlockSinchrBtn.style.opacity = "0";

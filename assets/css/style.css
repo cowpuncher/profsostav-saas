@@ -34,6 +34,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   color: var(--color-2);
+  height: 100vh;
 }
 
 h1,
@@ -548,7 +549,11 @@ th:hover .resize-handle {
     transform: translate(-15px, -50%);
 }
 
-
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 
 
 
@@ -558,6 +563,7 @@ th:hover .resize-handle {
   gap: 36px;
   position: relative;
   overflow: hidden;
+  flex-grow: 1;
 }
 
 /* aside */
@@ -569,6 +575,7 @@ th:hover .resize-handle {
 
 #propertyAside {
   width: 290px;
+  min-width: 49px;
   transition: var(--transition);
 }
 
@@ -577,6 +584,7 @@ th:hover .resize-handle {
   width: 49px;
 }
 #propertyAside svg {
+  min-width: 15px;
   width: 15px;
 }
 
@@ -850,7 +858,7 @@ th:hover .resize-handle {
   gap: 20px;
   max-width: 62%;
   width: 100%;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
 }
 
 .main__container-block__btns-box__view {
@@ -2511,6 +2519,7 @@ th:hover .resize-handle {
 .footer {
   padding: 30px 0;
   background: #fff;
+  margin-top: auto;
 }
 
 .footer__block {
