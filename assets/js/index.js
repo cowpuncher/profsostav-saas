@@ -178,7 +178,7 @@ window.addEventListener("DOMContentLoaded", () => {
       mainBlockSinchrBtn.style.display = "flex";
       btnHideMenuTop.textContent = "Скрыть меню";
       headerBlockSinchrBtn.style.opacity = "0";
-      titleMain.style.marginBottom = "25px";
+      // titleMain.style.marginBottom = "25px";
       if (viewBlockMain && hideBtnTomMenu) {
         viewBlockMain.appendChild(hideBtnTomMenu);
       } else {
