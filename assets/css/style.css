@@ -562,7 +562,7 @@ th:hover .resize-handle {
   background-color: var(--color-7);
   gap: 36px;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   flex-grow: 1;
 }
 
@@ -821,8 +821,8 @@ th:hover .resize-handle {
 }
 
 .main__container-box {
-  overflow-y: scroll;
-  height: 900px;
+  /* overflow-y: scroll; */
+  height: auto;
 }
 
 .main__container-box__title {
