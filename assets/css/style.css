@@ -405,6 +405,38 @@ table {
     minmax(50px, 140px)
     minmax(50px, 165px); */
     
+    minmax(5%,10%)    
+    minmax(4%, 6%)
+    minmax(11%, 25%)   
+    minmax(10%, 19%)    
+    minmax(10%, 20%)    
+    minmax(5%, 15%)    
+    minmax(4%, 6%)    
+    minmax(4%, 6%)    
+    /* minmax(6%, 6%)    
+    minmax(8%, 6%)     */
+    minmax(5%, 34%);
+}
+.smallTable table {
+  min-width: 100%;
+  width: auto;
+  -webkit-box-flex: 1;
+          flex: 1;
+  display: grid;
+  border-collapse: collapse;
+  grid-template-columns: 
+    /* minmax(50px, 220px)
+    minmax(50px, 132px)
+    minmax(50px, 132px)
+    minmax(50px, 270px)
+    minmax(50px, 203px)
+    minmax(50px, 90px)
+    minmax(50px, 145px)
+    minmax(50px, 98px)
+    minmax(50px, 90px)
+    minmax(50px, 140px)
+    minmax(50px, 165px); */
+    
     /* minmax(5%,10%)    
     minmax(4%, 6%)     */
     minmax(11%, 25%)   
@@ -417,7 +449,6 @@ table {
     minmax(8%, 6%)     */
     minmax(5%, 34%);
 }
-
 td {
     display: flex;
     align-items: center;
