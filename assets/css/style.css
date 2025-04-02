@@ -159,16 +159,16 @@ input {
 /* basic styles */
 .toggle__mark {
   background: var(--color-3);
-  width: 53px;
-  height: 28px;
+  width: 47px;
+  height: 22px;
   padding: 2px;
 }
 
 .toggle__mark:before {
   top: 2px;
   left: 2px;
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
   background-color: var(--color-4);
   border-radius: 50%;
 }
@@ -406,7 +406,7 @@ table {
     minmax(50px, 165px); */
     
     minmax(5%,10%)    
-    minmax(4%, 6%)
+    minmax(4%, 6%)    
     minmax(11%, 25%)   
     minmax(10%, 19%)    
     minmax(10%, 20%)    
@@ -417,6 +417,7 @@ table {
     minmax(8%, 6%)     */
     minmax(5%, 34%);
 }
+
 .smallTable table {
   min-width: 100%;
   width: auto;
@@ -439,15 +440,34 @@ table {
     
     /* minmax(5%,10%)    
     minmax(4%, 6%)     */
-    minmax(11%, 25%)   
-    minmax(10%, 19%)    
-    minmax(10%, 20%)    
-    minmax(5%, 15%)    
-    minmax(4%, 6%)    
-    minmax(4%, 6%)    
+    minmax(10%, 12%)   
+    minmax(5%, 11%)    
+    minmax(20%, 20%)    
+    minmax(10%, 25%)    
+    minmax(15%, 16%)    
+    minmax(10%, 16%)    
     /* minmax(6%, 6%)    
     minmax(8%, 6%)     */
     minmax(5%, 34%);
+}
+.mainWrapTable.smallTable.settingsTable table {
+  min-width: 100%;
+  width: auto;
+  -webkit-box-flex: 1;
+          flex: 1;
+  display: grid;
+  border-collapse: collapse;
+  grid-template-columns:    
+  minmax(40%, 40%)   
+  minmax(3%, 10%)   
+  minmax(5%, 7%)    
+  minmax(4%, 6%)    
+  minmax(6%, 10%)    
+  minmax(10%, 10%)    
+  minmax(10%, 10%)    
+  /* minmax(6%, 6%)    
+  minmax(10%, 10%)     */
+  minmax(10%, 10%);
 }
 td {
     display: flex;
@@ -733,7 +753,7 @@ th:hover .resize-handle {
 .content__block-scrollbar__container-box__text {
   gap: 10px;
   padding-left: 15px;
-  margin-bottom: 13px;
+  margin-bottom: 8px;
   cursor: pointer;
   transition: var(--transition);
 }
@@ -862,7 +882,6 @@ th:hover .resize-handle {
 
 .main__container {
   height: 100%;
-  height: auto;
   gap: 22px;
 }
 
@@ -924,9 +943,9 @@ th:hover .resize-handle {
 
 .main__create-block {
   background-color: var(--color-4);
-  padding: 30px;
+  padding: 15px 25px;
   border-radius: 3px;
-  gap: 30px;
+  gap: 10px;
 }
 
 .main__create-block__title {
@@ -953,12 +972,12 @@ th:hover .resize-handle {
 }
 
 .main__box-input {
-  gap: 15px;
+  gap: 5px;
 }
 
 .main__create-block__inputs {
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 10px;
 }
 
 .main__label {
@@ -985,7 +1004,7 @@ th:hover .resize-handle {
   font-family: "Futura PT";
   font-size: 16px;
   font-weight: 400;
-  padding: 14px 25px;
+  padding: 6px 15px;
   border: 1px solid var(--color-15);
   border-radius: 5px;
   background-color: var(--color-16);
@@ -1028,16 +1047,16 @@ th:hover .resize-handle {
 }
 
 .main__edit-block__statuses {
-  max-width: 692px;
+  max-width: 460px;
   width: 100%;
 }
 
 .main__edit-block__status {
   width: 100%;
-  padding: 23px 10px;
+  padding: 8px 10px;
   text-align: center;
-  gap: 20px;
-  font-size: 18px;
+  gap: 10px;
+  font-size: 15px;
   color: var(--color-4);
 }
 
@@ -1137,7 +1156,7 @@ th:hover .resize-handle {
 }
 
 .main__edit-negative__statuses-last__movement-title {
-  margin-bottom: 18px;
+  margin-bottom: 5px;
 }
 
 .main__edit-negative__statuses-last__movement-title h2 {
@@ -1169,9 +1188,9 @@ th:hover .resize-handle {
 .select__property-title {
   max-width: 100%;
   width: 100%;
-  height: 50px;
+  height: 34px;
   cursor: pointer;
-  padding: 17px 25px;
+  padding: 6px 15px;
   border: 1px solid var(--color-15);
   border-radius: 5px;
   z-index: 2;
@@ -1186,8 +1205,8 @@ th:hover .resize-handle {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: 22px;
-  right: 25px;
+  top: 13px;
+  right: 17px;
   transform: rotate(-90deg);
   transition: var(--transition);
 }
@@ -1199,7 +1218,7 @@ th:hover .resize-handle {
 .select__property-content {
   display: flex;
   position: absolute;
-  top: 55px;
+  top: 33px;
   left: 0;
   flex-direction: column;
   max-width: 100%;
@@ -1237,8 +1256,8 @@ th:hover .resize-handle {
 }
 
 .select__property-label {
-  height: 56px;
-  padding: 17px 25px;
+  height: 34px;
+  padding: 6px 15px;
   transition: all 0.2s ease-out;
   cursor: pointer;
   color: var(--color-2);
@@ -1258,8 +1277,8 @@ th:hover .resize-handle {
 
 .select__property-label::after {
   position: absolute;
-  top: -51px;
-  left: 25px;
+  top: -37px;
+  left: 15px;
   display: flex;
   align-items: center;
   max-width: 90%;
@@ -1271,12 +1290,12 @@ th:hover .resize-handle {
 }
 
 .main__block-photo {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .main__container-photo {
   grid-template-columns: repeat(auto-fill, minmax(277px, 1fr));
-  gap: 30px;
+  gap: 10px;
 }
 
 .main__container-photo__image-block {
@@ -1324,13 +1343,13 @@ th:hover .resize-handle {
 }
 
 .main__block-description {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .main__block-description__textarea {
   max-width: 100%;
   width: 100%;
-  height: 87px;
+  height: 75px;
   resize: none;
 }
 
@@ -1342,8 +1361,9 @@ th:hover .resize-handle {
 .btn__tab {
   padding: 10px;
   text-align: center;
+  width: auto;
 }
-
+/*
 .btn__tab:nth-of-type(1) {
   max-width: 170px;
 }
@@ -1365,7 +1385,7 @@ th:hover .resize-handle {
   max-width: 132px;
 }
 
-/* settings */
+ settings
 
 .main__settings-btns .btn__tab:nth-of-type(1) {
   max-width: 140px;
@@ -1384,16 +1404,18 @@ th:hover .resize-handle {
 .main__settings-btns .btn__tab:nth-of-type(6) {
   max-width: 132px;
 }
+ */
 
 .main__settings-block__toggles {
   margin-top: 13px;
-  margin-bottom: 59px;
+  margin-bottom: 15px;
+  justify-content: flex-start;
 }
 
 .main__settings-block__toggles-box {
   max-width: 552px;
   width: 100%;
-  gap: 15px;
+  gap: 6px;
 }
 
 .main__settings-block__toggle-text {
@@ -1410,9 +1432,9 @@ th:hover .resize-handle {
 }
 
 .main__settings-block__toggle-input {
-  width: 52px;
+  width: 47px;
   border: none;
-  padding: 5px 15px;
+  padding: 2px 7px;
   text-align: center;
   font-size: 16px;
   color: var(--color-10);
@@ -1838,7 +1860,10 @@ th:hover .resize-handle {
 .__select[data-state="active"] .__select__label::before {
   opacity: 1;
 }
-
+.aside.close .content__block-scrollbar {
+  opacity: 0;
+  transition: var(--transition);
+}
 .__select__title {
   display: flex;
   align-items: center;
@@ -2908,8 +2933,8 @@ th:hover .resize-handle {
 
 .inventory__create-calendar img {
   position: absolute;
-  right: 17px;
-  top: 18px;
+  right: 13px;
+  top: 9px;
 }
 
 /* inventory__container-create */
@@ -2967,7 +2992,7 @@ th:hover .resize-handle {
   font-size: 55px;
   color: var(--color-2);
   font-weight: 600;
-  margin-bottom: 13px;
+  margin-bottom: 1px;
 }
 
 .inventory-create__volume-text {
@@ -3116,7 +3141,7 @@ th:hover .resize-handle {
 }
 
 .main__settings-btns__inventory {
-  margin-bottom: 52px;
+  margin-bottom: 15px;
 }
 
 /* inventory-all__employees */
@@ -3178,8 +3203,8 @@ th:hover .resize-handle {
 
 .employees__box-selects__lists {
   display: none;
-  gap: 17px;
-  margin-top: 17px;
+  gap: 12px;
+  margin-top: 12px;
 }
 
 .employees__box-selects__lists.active {
@@ -3291,8 +3316,8 @@ th:hover .resize-handle {
   border-radius: 50%;
   color: var(--color-4);
   position: absolute;
-  top: 2px;
-  right: 3px;
+  top: -11px;
+  right: -8px;
 }
 
 .employees-edit__info .content__block-scrollbar__container-box {
@@ -3510,8 +3535,8 @@ th:hover .resize-handle {
 }
 
 .notifications__main .employees__box-selects {
-  margin-top: 29px;
-  gap: 18px;
+  margin: 15px 0px;
+  gap: 15px;
 }
 
 .notifications__main .content__block-scrollbar__container-box__text {
@@ -3542,6 +3567,10 @@ th:hover .resize-handle {
   opacity: 0;
   transition: var(--transition);
   margin-left: 6px;
+}
+
+.tooltip__text {
+  font-size: 12px;
 }
 .main__label {
   position: relative;

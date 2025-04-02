@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/images/icons/logo.svg" type="image/svg">
+    <link rel="icon" href="./assets/images/icons/fav-logo.svg" type="image/svg">
     <link rel="stylesheet" href="./assets/fonts/fonts.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Имущество</title>
@@ -15,12 +15,10 @@
         <div class="container">
             <div class="header__block dFlex jcsb">
                 <div class="dFlex aic header__block-box">
-                    <div class="header__block-logo">
-                        <img class="header__block-logo__text-icon" src="./assets/images/icons/logo-text.svg"
-                            alt="ПрофСостав">
-                        <img class="header__block-logo__icon" src="./assets/images/icons/logo.svg" alt="Логотип">
-                        <p class="header__block-logo__text">v 2.01</p>
-                    </div>
+                        <div class="header__block-logo">
+                            <img class="header__block-logo__text-icon" src="./assets/images/icons/logo_new.svg"
+                                alt="ПрофСостав">
+                        </div>
                     <h2>
                         <a href="#">Имущество</a> / <a href="#">Создать имущество</a>
                     </h2>
@@ -39,7 +37,7 @@
         </div>
     </header>
     <div class="content__block dFlex">
-        <aside class="aside"  id="propertyAside">
+        <aside  class="aside " id="propertyAside">
             <nav class="content__block-menu">
                 <ul class="content__block-menu__lists">
                     <li class="content__block-menu__list active">
@@ -372,7 +370,6 @@
 
                                 <div class="main__box-input dFlex fdc">
                                     <div class="main__label main__create-box dFlex aic">Локация
-                                        
                                         <div class="tooltipWrapper">
                                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -411,7 +408,6 @@
                                 </div>
                                 <div class="main__box-input dFlex fdc">
                                     <label class="main__label main__create-box dFlex aic">Раздел имущества
-                                        
                                         <div class="tooltipWrapper">
                                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -450,7 +446,6 @@
                                 </div>
                                 <div class="main__box-input dFlex fdc">
                                     <div class="main__label main__create-box dFlex aic">Штрихкод
-                                        
                                         <div class="tooltipWrapper">
                                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -489,7 +484,6 @@
                                 </div>
                                 <div class="main__box-input dFlex fdc">
                                     <label class="main__label main__create-box dFlex aic" for="createInput1">Колличество
-                                        
                                         <div class="tooltipWrapper">
                                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -575,15 +569,24 @@
                             </button>
                             <div class="dFlex fdc">
                                 <label for="textareaDescription"
-                                    class="main__label main__block-description dFlex aic">Описание<svg width="22"
-                                        height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="11" cy="11" r="10" stroke="#FF6600" stroke-width="1.5" />
-                                        <path
-                                            d="M9 8C9 6.89543 9.89543 6 11 6C12.1046 6 13 6.89543 13 8C13 8.39815 12.8837 8.76913 12.6831 9.08079C12.0854 10.0097 11 10.8954 11 12V12.5"
-                                            stroke="#FF6600" stroke-width="1.5" stroke-linecap="round" />
-                                        <path d="M10.991 16H11" stroke="#FF6600" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg></label>
+                                    class="main__label main__block-description dFlex aic">Описание
+                                    <div class="tooltipWrapper">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="11" cy="11" r="10" stroke="#FF6600" stroke-width="1.5" />
+                                            <path
+                                                d="M9 8C9 6.89543 9.89543 6 11 6C12.1046 6 13 6.89543 13 8C13 8.39815 12.8837 8.76913 12.6831 9.08079C12.0854 10.0097 11 10.8954 11 12V12.5"
+                                                stroke="#FF6600" stroke-width="1.5" stroke-linecap="round" />
+                                            <path d="M10.991 16H11" stroke="#FF6600" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <div class="tooltip">
+                                            <div class="tooltip__container">
+                                                <p class="tooltip__text">Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing elit. Ipsum</p>
+                                            </div>
+                                        </div>
+                                    </div></label>
                                 <textarea class="main__block-description__textarea main__input"
                                     name="textareaDescription"
                                     id="textareaDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias obcaecati enim, recusandae dicta nobis debitis, hic repellendus doloremque ipsa amet tenetur quod! Temporibus numquam et unde quaerat expedita cum ab!</textarea>
@@ -593,15 +596,23 @@
                                 <div class="dGrid main__block-charackteristicks">
                                     <div class="main__box-input dFlex fdc">
                                         <label class="main__label dFlex aic" for="price">Цена
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="11" cy="11" r="10" stroke="#FF6600" stroke-width="1.5" />
-                                                <path
-                                                    d="M9 8C9 6.89543 9.89543 6 11 6C12.1046 6 13 6.89543 13 8C13 8.39815 12.8837 8.76913 12.6831 9.08079C12.0854 10.0097 11 10.8954 11 12V12.5"
-                                                    stroke="#FF6600" stroke-width="1.5" stroke-linecap="round" />
-                                                <path d="M10.991 16H11" stroke="#FF6600" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
+                                            <div class="tooltipWrapper">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="11" cy="11" r="10" stroke="#FF6600" stroke-width="1.5" />
+                                                    <path
+                                                        d="M9 8C9 6.89543 9.89543 6 11 6C12.1046 6 13 6.89543 13 8C13 8.39815 12.8837 8.76913 12.6831 9.08079C12.0854 10.0097 11 10.8954 11 12V12.5"
+                                                        stroke="#FF6600" stroke-width="1.5" stroke-linecap="round" />
+                                                    <path d="M10.991 16H11" stroke="#FF6600" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                <div class="tooltip">
+                                                    <div class="tooltip__container">
+                                                        <p class="tooltip__text">Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Ipsum</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </label>
                                         <input class="main__input" type="number" id="price" name="price" value="30">
                                     </div>
