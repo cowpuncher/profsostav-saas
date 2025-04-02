@@ -35,6 +35,8 @@ body {
   font-weight: 500;
   color: var(--color-2);
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
@@ -403,8 +405,8 @@ table {
     minmax(50px, 140px)
     minmax(50px, 165px); */
     
-    minmax(5%,10%)    
-    minmax(4%, 6%)    
+    /* minmax(5%,10%)    
+    minmax(4%, 6%)     */
     minmax(11%, 25%)   
     minmax(10%, 19%)    
     minmax(10%, 20%)    
@@ -829,6 +831,7 @@ th:hover .resize-handle {
 
 .main__container {
   height: 100%;
+  height: auto;
   gap: 22px;
 }
 
@@ -3509,11 +3512,29 @@ th:hover .resize-handle {
   transition: var(--transition);
   margin-left: 6px;
 }
-
+.main__label {
+  position: relative;
+}
+.main__label .tooltip {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
 .tooltip__text {
   font-size: 12px;
 }
-
+.main__label svg:hover ~ .tooltip {
+  opacity: 1;
+  z-index: 999;
+  top: 100%;
+}
+.tooltipWrapper {
+  position: relative;
+  height: 22px;
+}
+.tooltipWrapper .tooltip {
+  min-width: 250px;
+}
 @media screen and (min-width: 998px) {
     body {
         font-size: 13px;
