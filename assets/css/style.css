@@ -1046,11 +1046,14 @@ th:hover .resize-handle {
 .header__edit-scroll__block-redirect a.active {
   font-weight: 900;
 }
-
+table.JColResizer > tbody > tr > td, 
+table.JColResizer > tbody > tr > th {
+  padding: 10px 10px!important;
+}
 .main__edit {
-  overflow-y: auto;
+  /*overflow-y: auto;*/
   /* height: 920px; */
-  height: 78vh;
+ /* height: 78vh;*/
   width: 100%;
 }
 
