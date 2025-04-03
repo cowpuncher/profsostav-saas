@@ -655,6 +655,7 @@ th:hover .resize-handle {
 
 #propertyAside.close  {
   min-width: 49px;
+  max-width: 49px;
 }
 #propertyAside svg {
   min-width: 15px;
