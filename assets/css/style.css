@@ -380,12 +380,12 @@ tbody tr td:last-child {
     border-radius: 0 5px 5px 0;
 }
 tbody tr td {
-    padding: 5px 10px;
+    padding: 10px 10px;
 }
 tbody tr:first-child td {
     margin-top: 5px;
 }
-table {
+/*table {
   min-width: 100%;
   width: auto;
   -webkit-box-flex: 1;
@@ -405,7 +405,7 @@ table {
     minmax(50px, 140px)
     minmax(50px, 165px); */
     
-    minmax(5%,10%)    
+/*    minmax(5%,10%)    
     minmax(4%, 6%)    
     minmax(11%, 25%)   
     minmax(10%, 19%)    
@@ -415,8 +415,8 @@ table {
     minmax(4%, 6%)    
     /* minmax(6%, 6%)    
     minmax(8%, 6%)     */
-    minmax(5%, 34%);
-}
+   /* minmax(5%, 34%);
+}*/
 
 .smallTable table {
   min-width: 100%;
@@ -470,8 +470,8 @@ table {
   minmax(10%, 10%);
 }
 td {
-    display: flex;
-    align-items: center;
+  /*  display: flex;
+    align-items: center;*/
     /* overflow: hidden; */
   /*   overflow: auto;
   flex-wrap: nowrap;
@@ -489,14 +489,22 @@ td {
 .tooltipImage img {
   width: 100%;
 }
-thead,
+.main__container-block__table {
+  border-spacing: inherit;
+}
+.thWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/*thead,
 tbody,
 tr {
   display: contents;
-}
+}*/
 th {
-    display: flex;
-    align-items: center;
+   /* display: flex;
+    align-items: center;*/
     gap: 5px;
     white-space: nowrap;
     overflow: hidden;

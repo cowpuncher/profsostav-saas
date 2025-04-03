@@ -345,544 +345,421 @@
                                 </form>
                             </div>
 
-                            <div class="main__container-block__table inventory-all__employees">
-                                <div class="main__container-block__table-filter">
-                                    <div class="main__container-block__table-row dFlex aic">
-                                        <div class="main__container-block__table-col">
-                                            <div class="main__container-block__table-filter__block">
-                                                <input class="input__checkbox" type="checkbox" id="checkboxProperty1"
-                                                    name="checkboxProperty">
-                                                <label class="main__container-block__create-input__checkbox"
-                                                    for="checkboxProperty1">
+
+
+                            
+                            <div class="mainWrapTable">
+                                <table class="main__container-block__table" width="100%" >
+                                    <thead>
+                                        <tr> 
+                                            <th> 
+                                                <label class="mainCheckbox checkbox">
+                                                    <input type="checkbox">
+                                                    <span class="customCheckbox"></span>
+                                                    <span class="name">ID</span>
                                                 </label>
-                                                <span class="main__container-block__table-filter__minus"></span>
-                                            </div>
-                                        </div>
-                                        <p
-                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
-                                            <img src="./assets/images/icons/search.svg" alt="Поиск">
-                                            ID
-                                            <img class="main__container-block__lists-property__text-arrow"
-                                                src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
-                                        </p>
-                                        <p
-                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
-                                            <img src="./assets/images/icons/search.svg" alt="Поиск">
-                                            Дата создания
-                                            <img class="main__container-block__lists-property__text-arrow"
-                                                src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
-                                        </p>
-                                        <p
-                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
-                                            <img src="./assets/images/icons/search.svg" alt="Поиск">
-                                            Дата изменения
-                                            <img class="main__container-block__lists-property__text-arrow"
-                                                src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
-                                        </p>
-                                        <p
-                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
-                                            <img src="./assets/images/icons/search.svg" alt="Поиск">
-                                            Фамилия
-                                            <img class="main__container-block__lists-property__text-arrow"
-                                                src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
-                                        </p>
-                                        <p
-                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
-                                            <img src="./assets/images/icons/search.svg" alt="Поиск">
-                                            Имя
-                                            <img class="main__container-block__lists-property__text-arrow"
-                                                src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
-                                        </p>
-                                        <p
-                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
-                                            Отчество
-                                            <img class="main__container-block__lists-property__text-arrow"
-                                                src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
-                                        </p>
-                                        <p
-                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
-                                            <img src="./assets/images/icons/search.svg" alt="Поиск">
-                                            Статус
-                                            <img class="main__container-block__lists-property__text-arrow"
-                                                src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
-                                        </p>
-                                        <p
-                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
-                                            <img src="./assets/images/icons/search.svg" alt="Поиск">
-                                            Роль
-                                            <img class="main__container-block__lists-property__text-arrow"
-                                                src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
-                                        </p>
-                                        <p
-                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
-                                            Отдел
-                                            <img class="main__container-block__lists-property__text-arrow"
-                                                src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
-                                        </p>
-                                        <p
-                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
-                                            <img src="./assets/images/icons/search.svg" alt="Поиск">
-                                            Имущество
-                                            <img class="main__container-block__lists-property__text-arrow"
-                                                src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="main__container-block__table-body">
-                                    <div class="main__container-block__table-row dFlex aic">
-                                        <div class="main__container-block__table-col">
-                                            <input class="input__checkbox" type="checkbox" id="checkboxProperty2"
-                                                name="checkboxProperty">
-                                            <label class="main__container-block__create-input__checkbox"
-                                                for="checkboxProperty2">
+                                            <span class="resize-handle"></span>
+                                            </th> 
+                                            <th> 
+                                                <div class="thWrapper">
+                                                    <div class="formActivedBtn"><img src="./assets/images/icons/search.svg" alt="Поиск"></div>
+                                                    <form class="formSearchColTable">
+                                                        <button type="button" class="formSearchBtn"><img src="./assets/images/icons/search.svg" alt="Поиск"></button>   
+                                                        <div class="inputFormSearch">
+                                                            <input type="search" placeholder="Поиск">
+                                                        </div>
+                                                    </form>
+                                                    <span>Дата создания</span>
+                                                    <img class="main__container-block__lists-property__text-arrow"
+                                                        src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
+                                                    <span class="resize-handle"></span>
+                                                </div>
+                                            </th>
+                                            <th> 
+                                                
+                                                <div class="thWrapper">
+                                                    <div class="formActivedBtn"><img src="./assets/images/icons/search.svg" alt="Поиск"></div>
+                                                    <form class="formSearchColTable">
+                                                        <button type="button" class="formSearchBtn"><img src="./assets/images/icons/search.svg" alt="Поиск"></button>   
+                                                        <div class="inputFormSearch">
+                                                            <input type="search" placeholder="Поиск">
+                                                        </div>
+                                                    </form>
+                                                    <span>Дата изменения</span>
+                                                    <img class="main__container-block__lists-property__text-arrow"
+                                                        src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
+                                                    <span class="resize-handle"></span>
+                                                </div>
+                                            </th>  
+                                            <th> 
+                                                <div class="thWrapper">
+                                                    <div class="formActivedBtn"><img src="./assets/images/icons/search.svg" alt="Поиск"></div>
+                                                    <form class="formSearchColTable">
+                                                        <button type="button" class="formSearchBtn"><img src="./assets/images/icons/search.svg" alt="Поиск"></button>   
+                                                        <div class="inputFormSearch">
+                                                            <input type="search" placeholder="Поиск">
+                                                        </div>
+                                                    </form>
+                                                    <span>Фамилия</span>
+                                                    <img class="main__container-block__lists-property__text-arrow"
+                                                        src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
+                                                    <span class="resize-handle"></span>
+                                                </div>
+                                            </th> 
+                                            <th> 
+                                                <div class="thWrapper">
+                                                    <div class="formActivedBtn"><img src="./assets/images/icons/search.svg" alt="Поиск"></div>
+                                                    <form class="formSearchColTable">
+                                                        <button type="button" class="formSearchBtn"><img src="./assets/images/icons/search.svg" alt="Поиск"></button>   
+                                                        <div class="inputFormSearch">
+                                                            <input type="search" placeholder="Поиск">
+                                                        </div>
+                                                    </form>
+                                                    <span>Имя</span>
+                                                    <img class="main__container-block__lists-property__text-arrow"
+                                                        src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
+                                                    <span class="resize-handle"></span>
+                                                </div>
+                                            </th>  
+                                            <th> 
+                                                
+                                                <div class="thWrapper">
+                                                    <span>Отчество</span>
+                                                    <img class="main__container-block__lists-property__text-arrow"
+                                                        src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
+                                                    <span class="resize-handle"></span>
+                                                </div>
+                                            </th>  
+                                            <th> 
+                                                <div class="thWrapper">
+                                                    <div class="formActivedBtn"><img src="./assets/images/icons/search.svg" alt="Поиск"></div>
+                                                    <form class="formSearchColTable">
+                                                        <button type="button" class="formSearchBtn"><img src="./assets/images/icons/search.svg" alt="Поиск"></button>   
+                                                        <div class="inputFormSearch">
+                                                            <input type="search" placeholder="Поиск">
+                                                        </div>
+                                                    </form>
+                                                    <span>Статус</span>
+                                                    <img class="main__container-block__lists-property__text-arrow"
+                                                        src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
+                                                </div>
+                                                <span class="resize-handle"></span>
+                                            </th>  
+                                            <th> 
+                                                <div class="thWrapper">
+                                                    <div class="formActivedBtn"><img src="./assets/images/icons/search.svg" alt="Поиск"></div>
+                                                    <form class="formSearchColTable">
+                                                        <button type="button" class="formSearchBtn"><img src="./assets/images/icons/search.svg" alt="Поиск"></button>   
+                                                        <div class="inputFormSearch">
+                                                            <input type="search" placeholder="Поиск">
+                                                        </div>
+                                                    </form>
+                                                    <span>Роль</span>
+                                                    <img class="main__container-block__lists-property__text-arrow"
+                                                        src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
+                                                </div>
+                                                <span class="resize-handle"></span>
+                                            </th> 
+                                            <th> 
+                                                <div class="thWrapper">
+                                                    <span>Отдел</span>
+                                                    <img class="main__container-block__lists-property__text-arrow"
+                                                        src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
+                                                    </div>
+                                                    <span class="resize-handle"></span>
+                                            </th> 
+                                            <th> 
+                                                <div class="thWrapper">
+                                                    <div class="formActivedBtn"><img src="./assets/images/icons/search.svg" alt="Поиск"></div>
+                                                    <form class="formSearchColTable">
+                                                        <button type="button" class="formSearchBtn"><img src="./assets/images/icons/search.svg" alt="Поиск"></button>   
+                                                        <div class="inputFormSearch">
+                                                            <input type="search" placeholder="Поиск">
+                                                        </div>
+                                                    </form>
+                                                    <span>Имущество</span>
+                                                    <img class="main__container-block__lists-property__text-arrow"
+                                                        src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
+                                                    </div>
+                                                    <span class="resize-handle"></span>
+                                            </th> 
+
+
+                                        </tr>
+                                    </thead>
+                                    <tr> 
+                                        <td>
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span class="customCheckbox"></span>
+                                                <a href="#">1001</a>
                                             </label>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <a class="main__container-block__lists-property__id-link" href="#">101</a>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__text active">
-                                                22.01.2021
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property1">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property1" name="property1" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__name active">
-                                                12.02.2021
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__name active">
-                                                Юшин
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__name active">
-                                                Дмитрий
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__name active">
-                                                Александрович
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__name active">
-                                                Работает
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="status-successfully_text main__container-block__table-col__text main__container-block__lists-property__name active">
+                                        </td> 
+                                        <td>
+                                            <span>22.01.2021</span>
+                                        </td>
+                                        <td>
+                                            <span>22.01.2021</span>
+                                        </td>
+                                        <td> <span>Юшин</span> </td>
+                                        <td> <span>Дмитрий</span> </td> 
+                                        <td> <span>Александрович</span> </td>
+                                        <td> 
+                                            <span>Работает</span>
+                                        </td> 
+                                        <td> 
+                                            <p class="status-successfully_text main__container-block__table-col__text main__container-block__lists-property__name active">
                                                 Админ
                                             </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__kod active">
-                                                Без отдела
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property3">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property3" name="property3" value="">
-                                            </label>
-                                        </div>
-                                        <div class="main__container-block__table-col">
+                                        </td> 
+                                        <td> <span>Без отдела</span> </td> 
+                                        <td> 
                                             <a class="main__container-block__lists-property__id-link" href="#">14</a>
+                                        </td> 
 
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property5">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property5" name="property5" value="">
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="main__container-block__table-row dFlex aic">
-                                        <div class="main__container-block__table-col">
-                                            <input class="input__checkbox" type="checkbox" id="checkboxProperty2"
-                                                name="checkboxProperty">
-                                            <label class="main__container-block__create-input__checkbox"
-                                                for="checkboxProperty2">
-                                            </label>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <a class="main__container-block__lists-property__id-link" href="#">101</a>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__text active">
-                                                22.01.2021
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property1">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property1" name="property1" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__name active">
-                                                12.02.2021
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__name active">
-                                                Юшин
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__name active">
-                                                Дмитрий
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__name active">
-                                                Александрович
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__name active">
-                                                Работает
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__name active">
-                                                Пользователь
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__kod active">
-                                                Без отдела
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property3">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property3" name="property3" value="">
-                                            </label>
-                                        </div>
-                                        <div class="main__container-block__table-col">
 
-                                        </div>
-                                    </div>
-                                    <div class="main__container-block__table-row dFlex aic">
-                                        <div class="main__container-block__table-col">
-                                            <input class="input__checkbox" type="checkbox" id="checkboxProperty2"
-                                                name="checkboxProperty">
-                                            <label class="main__container-block__create-input__checkbox"
-                                                for="checkboxProperty2">
+
+                                    </tr>	
+
+                                    <tr> 
+                                        <td>
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span class="customCheckbox"></span>
+                                                <a href="#">1001</a>
                                             </label>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <a class="main__container-block__lists-property__id-link" href="#">101</a>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__text active">
-                                                22.01.2021
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property1">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property1" name="property1" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__name active">
-                                                12.02.2021
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__name active">
-                                                Юшин
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__name active">
-                                                Дмитрий
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__name active">
-                                                Александрович
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="status-unsuccessfully_text main__container-block__table-col__text main__container-block__lists-property__name active">
+                                        </td> 
+                                        <td>
+                                            <span>22.01.2021</span>
+                                        </td>
+                                        <td>
+                                            <span>22.01.2021</span>
+                                        </td>
+                                        <td> <span>Юшин</span> </td>
+                                        <td> <span>Дмитрий</span> </td> 
+                                        <td> <span>Александрович</span> </td>
+                                        <td> 
+                                            <p class="status-unsuccessfully_text main__container-block__table-col__text main__container-block__lists-property__name active">
                                                 Заблокирован
                                             </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__name active">
-                                                Исполнитель
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__kod active">
-                                                Без отдела
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property3">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property3" name="property3" value="">
-                                            </label>
-                                        </div>
-                                        <div class="main__container-block__table-col">
+                                        </td> 
+                                        <td> 
+                                            <span>Пользователь</span>
+                                        </td> 
+                                        <td> <span>Без отдела</span> </td> 
+                                        <td> 
                                             <a class="main__container-block__lists-property__id-link" href="#">14</a>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property5">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property5" name="property5" value="">
+                                        </td> 
+
+
+
+                                    </tr>	
+                                    <tr> 
+                                        <td>
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span class="customCheckbox"></span>
+                                                <a href="#">1001</a>
                                             </label>
-                                        </div>
-                                    </div>
-                                    <div class="main__container-block__table-row dFlex aic">
-                                        <div class="main__container-block__table-col">
-                                            <input class="input__checkbox" type="checkbox" id="checkboxProperty2"
-                                                name="checkboxProperty">
-                                            <label class="main__container-block__create-input__checkbox"
-                                                for="checkboxProperty2">
-                                            </label>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <a class="main__container-block__lists-property__id-link" href="#">101</a>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__text active">
-                                                22.01.2021
+                                        </td> 
+                                        <td>
+                                            <span>22.01.2021</span>
+                                        </td>
+                                        <td>
+                                            <span>22.01.2021</span>
+                                        </td>
+                                        <td> <span>Юшин</span> </td>
+                                        <td> <span>Дмитрий</span> </td> 
+                                        <td> <span>Александрович</span> </td>
+                                        <td> 
+                                            <span>Работает</span>
+                                        </td> 
+                                        <td> 
+                                            <p class="status-successfully_text main__container-block__table-col__text main__container-block__lists-property__name active">
+                                                Админ
                                             </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property1">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property1" name="property1" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__name active">
-                                                12.02.2021
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__name active">
-                                                Юшин
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__name active">
-                                                Дмитрий
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__name active">
-                                                Александрович
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__name active">
-                                                Работает
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="main__container-block__table-col main__container-block__table-col__name">
-                                            <p
-                                                class="status-successfully_text main__container-block__table-col__text main__container-block__lists-property__name active">
-                                                Суперадмин
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property2">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property2" name="property2" value="">
-                                            </label>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <p
-                                                class="main__container-block__table-col__text main__container-block__lists-property__kod active">
-                                                Без отдела
-                                            </p>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property3">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property3" name="property3" value="">
-                                            </label>
-                                        </div>
-                                        <div class="main__container-block__table-col">
+                                        </td> 
+                                        <td> <span>Без отдела</span> </td> 
+                                        <td> 
                                             <a class="main__container-block__lists-property__id-link" href="#">14</a>
-                                            <label class="main__container-block__table-col__label editing__block"
-                                                for="property5">
-                                                <input class="main__container-block__table-col__input" type="text"
-                                                    id="property5" name="property5" value="">
+                                        </td> 
+
+
+
+                                    </tr>	
+
+                                    <tr> 
+                                        <td>
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span class="customCheckbox"></span>
+                                                <a href="#">1001</a>
                                             </label>
-                                        </div>
-                                    </div>
-                                </div>
+                                        </td> 
+                                        <td>
+                                            <span>22.01.2021</span>
+                                        </td>
+                                        <td>
+                                            <span>22.01.2021</span>
+                                        </td>
+                                        <td> <span>Юшин</span> </td>
+                                        <td> <span>Дмитрий</span> </td> 
+                                        <td> <span>Александрович</span> </td>
+                                        <td> 
+                                            <p class="status-unsuccessfully_text main__container-block__table-col__text main__container-block__lists-property__name active">
+                                                Заблокирован
+                                            </p>
+                                        </td> 
+                                        <td> 
+                                            <span>Пользователь</span>
+                                        </td> 
+                                        <td> <span>Без отдела</span> </td> 
+                                        <td> 
+                                            <a class="main__container-block__lists-property__id-link" href="#">14</a>
+                                        </td> 
+
+
+
+                                    </tr>	
+                                    <tr> 
+                                        <td>
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span class="customCheckbox"></span>
+                                                <a href="#">1001</a>
+                                            </label>
+                                        </td> 
+                                        <td>
+                                            <span>22.01.2021</span>
+                                        </td>
+                                        <td>
+                                            <span>22.01.2021</span>
+                                        </td>
+                                        <td> <span>Юшин</span> </td>
+                                        <td> <span>Дмитрий</span> </td> 
+                                        <td> <span>Александрович</span> </td>
+                                        <td> 
+                                            <span>Работает</span>
+                                        </td> 
+                                        <td> 
+                                            <p class="status-successfully_text main__container-block__table-col__text main__container-block__lists-property__name active">
+                                                Админ
+                                            </p>
+                                        </td> 
+                                        <td> <span>Без отдела</span> </td> 
+                                        <td> 
+                                            <a class="main__container-block__lists-property__id-link" href="#">14</a>
+                                        </td> 
+
+
+
+                                    </tr>	
+
+                                    <tr> 
+                                        <td>
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span class="customCheckbox"></span>
+                                                <a href="#">1001</a>
+                                            </label>
+                                        </td> 
+                                        <td>
+                                            <span>22.01.2021</span>
+                                        </td>
+                                        <td>
+                                            <span>22.01.2021</span>
+                                        </td>
+                                        <td> <span>Юшин</span> </td>
+                                        <td> <span>Дмитрий</span> </td> 
+                                        <td> <span>Александрович</span> </td>
+                                        <td> 
+                                            <p class="status-unsuccessfully_text main__container-block__table-col__text main__container-block__lists-property__name active">
+                                                Заблокирован
+                                            </p>
+                                        </td> 
+                                        <td> 
+                                            <span>Пользователь</span>
+                                        </td> 
+                                        <td> <span>Без отдела</span> </td> 
+                                        <td> 
+                                            <a class="main__container-block__lists-property__id-link" href="#">14</a>
+                                        </td> 
+
+
+
+                                    </tr>	
+                                    <tr> 
+                                        <td>
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span class="customCheckbox"></span>
+                                                <a href="#">1001</a>
+                                            </label>
+                                        </td> 
+                                        <td>
+                                            <span>22.01.2021</span>
+                                        </td>
+                                        <td>
+                                            <span>22.01.2021</span>
+                                        </td>
+                                        <td> <span>Юшин</span> </td>
+                                        <td> <span>Дмитрий</span> </td> 
+                                        <td> <span>Александрович</span> </td>
+                                        <td> 
+                                            <span>Работает</span>
+                                        </td> 
+                                        <td> 
+                                            <p class="status-successfully_text main__container-block__table-col__text main__container-block__lists-property__name active">
+                                                Админ
+                                            </p>
+                                        </td> 
+                                        <td> <span>Без отдела</span> </td> 
+                                        <td> 
+                                            <a class="main__container-block__lists-property__id-link" href="#">14</a>
+                                        </td> 
+
+
+
+                                    </tr>	
+
+                                    <tr> 
+                                        <td>
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <span class="customCheckbox"></span>
+                                                <a href="#">1001</a>
+                                            </label>
+                                        </td> 
+                                        <td>
+                                            <span>22.01.2021</span>
+                                        </td>
+                                        <td>
+                                            <span>22.01.2021</span>
+                                        </td>
+                                        <td> <span>Юшин</span> </td>
+                                        <td> <span>Дмитрий</span> </td> 
+                                        <td> <span>Александрович</span> </td>
+                                        <td> 
+                                            <p class="status-unsuccessfully_text main__container-block__table-col__text main__container-block__lists-property__name active">
+                                                Заблокирован
+                                            </p>
+                                        </td> 
+                                        <td> 
+                                            <span>Пользователь</span>
+                                        </td> 
+                                        <td> <span>Без отдела</span> </td> 
+                                        <td> 
+                                            <a class="main__container-block__lists-property__id-link" href="#">14</a>
+                                        </td> 
+
+
+
+                                    </tr>	
+
+                                </table>
                             </div>
+
+
                         </div>
                     </div>
                     <div>

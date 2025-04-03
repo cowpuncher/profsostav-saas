@@ -181,66 +181,80 @@
                             </div>
                         </div>
                         <div class="main__edit-negative__statuses-last__movement inventory__container-log">
-                            <div class="main__container-block__table">
-                                <div class="main__container-block__table-filter">
-                                    <div class="main__container-block__table-row dFlex aic">
-                                        <p
-                                            class="main__container-block__table-col main__container-block__table-col__filter">
-                                            Название
-                                        </p>
-                                        <p
-                                            class="main__container-block__table-col main__container-block__table-col__filter">
-                                            Дата обмена
-                                        </p>
-                                        <p
-                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
-                                            Время обмена
-                                        </p>
-                                        <p
-                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
-                                            <span>Направление</span>
-                                            <img class="main__container-block__lists-property__text-arrow"
-                                                src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
-                                        </p>
-                                        <p
-                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
-                                            Пользователь
-                                            <img class="main__container-block__lists-property__text-arrow"
-                                                src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
-                                        </p>
-                                        <p
-                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
-                                            Статус
-                                            <img class="main__container-block__lists-property__text-arrow"
-                                                src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
-                                        </p>
-                                        <p
-                                            class="main__container-block__table-col main__container-block__lists-property__text main__container-block__table-col__filter dFlex aic ">
-                                            Скачать лог
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="main__container-block__table-body">
-                                    <div class="main__container-block__table-row dFlex aic">
-                                        <div class="main__container-block__table-col">
-                                            <time datetime="20-09-2021">Инвентаризация12</time>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <time datetime="20-09-2021">20.09.2021</time>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <time datetime="18:36:21">18:36:21</time>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <p>Отправлено</p>
-                                        </div>
-                                        <div class="main__container-block__table-col dFlex aic jcsb">
-                                            <p>Юшин Дмитрий</p>
-                                        </div>
-                                        <div class="main__container-block__table-col">
+                            <div class="mainWrapTable ">
+                                <table class="main__container-block__table" width="100%" >
+                                    <thead>
+                                        <tr> 
+                                            <th> 
+                                               
+                                                <span>Название</span>
+                                                <span class="resize-handle"></span>
+                                            </th>
+                                            <th> 
+                                               
+                                                <span>Дата обмена</span>
+                                                <span class="resize-handle"></span>
+                                            </th>
+                                            <th> 
+                                                <span>Время обмена</span>
+                                               <span class="resize-handle"></span>
+                                            </th>  
+                                            <th> 
+                                               
+                                               <div class="thWrapper">
+                                                   <span>Направление</span>
+                                                   <img class="main__container-block__lists-property__text-arrow"
+                                                       src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
+                                                   <span class="resize-handle"></span>
+                                               </div>
+                                                 <span class="resize-handle"></span>
+                                            </th> 
+                                            <th> 
+                                                <div class="thWrapper">
+                                                    <span>Пользователь</span>
+                                                    <img class="main__container-block__lists-property__text-arrow"
+                                                        src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
+                                                    <span class="resize-handle"></span>
+                                                </div>
+                                                <span class="resize-handle"></span>
+                                            </th>  
+                                            <th> 
+                                                <div class="thWrapper">
+                                                    <span>Статус</span>
+                                                    <img class="main__container-block__lists-property__text-arrow"
+                                                        src="./assets/images/icons/arrow-icon.svg" alt="Выбор">
+                                                    <span class="resize-handle"></span>
+                                                </div>
+                                                <span class="resize-handle"></span>
+                                            </th>  
+                                            <th> 
+                                                <span>Скачать лог</span>
+                                               <span class="resize-handle"></span>
+                                            </th>  
+    
+                                        </tr>
+                                    </thead>
+                                    <tr> 
+                                        <td>                                                
+                                            <span>Название</span>
+                                        </td>
+                                        <td>                                                
+                                            <span>20.09.2021</span>
+                                        </td>
+                                        <td>                                                
+                                            <span>
+                                                18:36:21</span>
+                                        </td>
+                                        <td>                                                
+                                            <span>Отправлено</span>
+                                        </td> 
+                                        <td> <span>
+                                            Юшин Дмитрий</span> </td>
+                                        <td> 
                                             <p class="status-successfully_text">Успешно</p>
-                                        </div>
-                                        <div class="main__container-block__table-col">
+                                        </td> 
+                                        <td>                                                 
+                                            
                                             <button type="button" class="dFlex aic download__table">
                                                 <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -253,28 +267,29 @@
                                                 </svg>
                                                 <p>Скачать</p>
                                             </button>
-                                        </div>
-                                    </div>
-                                    <div class="main__container-block__table-row dFlex aic">
-                                        <div class="main__container-block__table-col">
-                                            <time datetime="20-09-2021">Инвентаризация12</time>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <time datetime="20-09-2021">20.09.2021</time>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <time datetime="18:36:21">18:36:21</time>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <p>Отправлено</p>
-                                        </div>
-                                        <div class="main__container-block__table-col dFlex aic jcsb">
-                                            <p>Юшин Дмитрий</p>
-                                        </div>
-                                        <div class="main__container-block__table-col">
+                                        </td> 
+                                    </tr>	
+                                    <tr> 
+                                        <td>                                                
+                                            <span>Название</span>
+                                        </td>
+                                        <td>                                                
+                                            <span>20.09.2021</span>
+                                        </td>
+                                        <td>                                                
+                                            <span>
+                                                18:36:21</span>
+                                        </td>
+                                        <td>                                                
+                                            <span>Отправлено</span>
+                                        </td> 
+                                        <td> <span>
+                                            Юшин Дмитрий</span> </td>
+                                        <td> 
                                             <p class="status-successfully_text">Успешно</p>
-                                        </div>
-                                        <div class="main__container-block__table-col">
+                                        </td> 
+                                        <td>                                                 
+                                            
                                             <button type="button" class="dFlex aic download__table">
                                                 <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -287,28 +302,29 @@
                                                 </svg>
                                                 <p>Скачать</p>
                                             </button>
-                                        </div>
-                                    </div>
-                                    <div class="main__container-block__table-row dFlex aic">
-                                        <div class="main__container-block__table-col">
-                                            <time datetime="20-09-2021">Инвентаризация12</time>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <time datetime="20-09-2021">20.09.2021</time>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <time datetime="18:36:21">18:36:21</time>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <p>Отправлено</p>
-                                        </div>
-                                        <div class="main__container-block__table-col dFlex aic jcsb">
-                                            <p>Юшин Дмитрий</p>
-                                        </div>
-                                        <div class="main__container-block__table-col">
+                                        </td> 
+                                    </tr>	
+                                    <tr> 
+                                        <td>                                                
+                                            <span>Название</span>
+                                        </td>
+                                        <td>                                                
+                                            <span>20.09.2021</span>
+                                        </td>
+                                        <td>                                                
+                                            <span>
+                                                18:36:21</span>
+                                        </td>
+                                        <td>                                                
+                                            <span>Отправлено</span>
+                                        </td> 
+                                        <td> <span>
+                                            Юшин Дмитрий</span> </td>
+                                        <td> 
                                             <p class="status-successfully_text">Успешно</p>
-                                        </div>
-                                        <div class="main__container-block__table-col">
+                                        </td> 
+                                        <td>                                                 
+                                            
                                             <button type="button" class="dFlex aic download__table">
                                                 <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -321,28 +337,29 @@
                                                 </svg>
                                                 <p>Скачать</p>
                                             </button>
-                                        </div>
-                                    </div>
-                                    <div class="main__container-block__table-row dFlex aic">
-                                        <div class="main__container-block__table-col">
-                                            <time datetime="20-09-2021">Инвентаризация12</time>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <time datetime="20-09-2021">20.09.2021</time>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <time datetime="18:36:21">18:36:21</time>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <p>Отправлено</p>
-                                        </div>
-                                        <div class="main__container-block__table-col dFlex aic jcsb">
-                                            <p>Юшин Дмитрий</p>
-                                        </div>
-                                        <div class="main__container-block__table-col">
+                                        </td> 
+                                    </tr>	
+                                    <tr> 
+                                        <td>                                                
+                                            <span>Название</span>
+                                        </td>
+                                        <td>                                                
+                                            <span>20.09.2021</span>
+                                        </td>
+                                        <td>                                                
+                                            <span>
+                                                18:36:21</span>
+                                        </td>
+                                        <td>                                                
+                                            <span>Отправлено</span>
+                                        </td> 
+                                        <td> <span>
+                                            Юшин Дмитрий</span> </td>
+                                        <td> 
                                             <p class="status-successfully_text">Успешно</p>
-                                        </div>
-                                        <div class="main__container-block__table-col">
+                                        </td> 
+                                        <td>                                                 
+                                            
                                             <button type="button" class="dFlex aic download__table">
                                                 <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -355,28 +372,29 @@
                                                 </svg>
                                                 <p>Скачать</p>
                                             </button>
-                                        </div>
-                                    </div>
-                                    <div class="main__container-block__table-row dFlex aic">
-                                        <div class="main__container-block__table-col">
-                                            <time datetime="20-09-2021">Инвентаризация12</time>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <time datetime="20-09-2021">20.09.2021</time>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <time datetime="18:36:21">18:36:21</time>
-                                        </div>
-                                        <div class="main__container-block__table-col">
-                                            <p>Отправлено</p>
-                                        </div>
-                                        <div class="main__container-block__table-col dFlex aic jcsb">
-                                            <p>Юшин Дмитрий</p>
-                                        </div>
-                                        <div class="main__container-block__table-col">
+                                        </td> 
+                                    </tr>	
+                                    <tr> 
+                                        <td>                                                
+                                            <span>Название</span>
+                                        </td>
+                                        <td>                                                
+                                            <span>20.09.2021</span>
+                                        </td>
+                                        <td>                                                
+                                            <span>
+                                                18:36:21</span>
+                                        </td>
+                                        <td>                                                
+                                            <span>Отправлено</span>
+                                        </td> 
+                                        <td> <span>
+                                            Юшин Дмитрий</span> </td>
+                                        <td> 
                                             <p class="status-successfully_text">Успешно</p>
-                                        </div>
-                                        <div class="main__container-block__table-col">
+                                        </td> 
+                                        <td>                                                 
+                                            
                                             <button type="button" class="dFlex aic download__table">
                                                 <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -389,10 +407,11 @@
                                                 </svg>
                                                 <p>Скачать</p>
                                             </button>
-                                        </div>
-                                    </div>
-                                </div>
+                                        </td> 
+                                    </tr>		
+                                </table>
                             </div>
+
                         </div>
                     </div>
                     <div>
